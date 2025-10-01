@@ -34,6 +34,7 @@ __MACOSX/
 
 # Reports & Figures
 **/reports/figures/**
+!**/reports/figures/
 !**/reports/figures/**/*.png
 !**/reports/figures/**/*.jpg
 !**/reports/figures/**/*.jpeg
