@@ -1,0 +1,51 @@
+# Python & Jupyter
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+.ipynb_checkpoints/
+*.nbconvert.ipynb
+
+# Environments / Tooling
+.venv/
+venv/
+.env
+.env.*
+.vscode/
+.idea/
+.pytest_cache/
+.mypy_cache/
+
+# OS junk
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+__MACOSX/
+
+# Data
+**/data/raw/**
+!**/data/raw/tiktok_dataset.csv
+**/data/raw/**/*.zip
+**/data/raw/**/*.tar
+**/data/raw/**/*.tgz
+**/data/raw/**/*.7z
+
+# Reports & Figures
+**/reports/figures/**
+!**/reports/figures/**/*.png
+!**/reports/figures/**/*.jpg
+!**/reports/figures/**/*.jpeg
+!**/reports/figures/**/*.svg
+!**/reports/figures/**/*.gif
+!**/reports/figures/*/.gitkeep
+
+# Stakeholder Docs
+**/docs/stakeholders/drafts/**
+!**/docs/stakeholders/final/**
+
+# Logs / Misc
+*.log
+*.tmp
+*.bak
