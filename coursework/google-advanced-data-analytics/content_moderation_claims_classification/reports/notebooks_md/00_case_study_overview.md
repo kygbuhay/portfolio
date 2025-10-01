@@ -35,9 +35,9 @@ Can we automatically classify TikTok videos as **factual claims** vs. **subjecti
 
 ## Visuals
 
-![Confusion Matrix — Random Forest (Test)](../reports/figures/figures_06_tree_models_recommendation/rf_test_confusion_matrix_counts.png)  
+![Confusion Matrix — Random Forest (Test)](../figures/figures_06_tree_models_recommendation/rf_test_confusion_matrix_counts.png)  
 
-![Feature Importances — Random Forest](../reports/figures/figures_06_tree_models_recommendation/rf_feature_importances.png)  
+![Feature Importances — Random Forest](../figures/figures_06_tree_models_recommendation/rf_feature_importances.png)  
 
 
 ## Minimal Workflow (For Readers)
