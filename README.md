@@ -8,21 +8,22 @@ Projects are organized into two sections:
 
 ---
 
-## 📂 Repository Structure  
+## 📂 Repository Structure
 
+```
 portfolio/
 ├── coursework/
-│ ├── google-advanced-data-analytics/
-│ │ ├── employee_attrition_analysis/
-│ │ └── content_moderation_claims_classification/
-│ ├── google-business-intelligence/
-│ │ └── call_center_customer_satisfaction/
-│ └── google-data-analytics/
-│ └── ai_workplace_productivity_analysis/
+│   ├── google-advanced-data-analytics/
+│   │   ├── employee_attrition_analysis/
+│   │   └── content_moderation_claims_classification/
+│   ├── google-business-intelligence/
+│   │   └── call_center_customer_satisfaction/
+│   └── google-data-analytics/
+│       └── ai_workplace_productivity_analysis/
 └── showcase/
-├── [future_case_study_1]/
-└── [future_case_study_2]/
-
+    ├── [future_case_study_1]/
+    └── [future_case_study_2]/
+```
 ---
 
 ## 📊 Coursework Case Studies  
