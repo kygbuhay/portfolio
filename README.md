@@ -12,7 +12,9 @@ Projects are organized into two sections:
 
 ```
 portfolio/
-├── coursework/
+├── src/                         # shared reusable modules (data_cleaning, viz_access, etc.)
+│
+├── coursework/                  # certificate & training case studies
 │   ├── google-advanced-data-analytics/
 │   │   ├── employee_attrition_analysis/
 │   │   └── content_moderation_claims_classification/
@@ -20,7 +22,8 @@ portfolio/
 │   │   └── call_center_customer_satisfaction/
 │   └── google-data-analytics/
 │       └── ai_workplace_productivity_analysis/
-└── showcase/
+│
+└── showcase/                    # custom portfolio projects
     ├── [future_case_study_1]/
     └── [future_case_study_2]/
 ```
