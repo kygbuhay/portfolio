@@ -1,19 +1,23 @@
-## Data Dictionary – HR Capstone Dataset
 
-**Dataset name:** `HR_capstone_dataset.csv`  
-**Observations:** 14,999 employees (rows)  
-**Features:** 10 columns of self-reported employee information  
+# Data Dictionary – Employee Attrition Dataset
 
-| Column Name           | Type   | Description                                                                 |
-|-----------------------|--------|-----------------------------------------------------------------------------|
-| `satisfaction_level`  | int64  | Employee’s self-reported satisfaction level (0–1).                         |
-| `last_evaluation`     | int64  | Employee’s last performance review score (0–1).                            |
-| `number_project`      | int64  | Number of projects the employee contributes to.                            |
-| `average_monthly_hours` | int64 | Average number of hours the employee worked per month.                     |
-| `time_spend_company`  | int64  | Number of years the employee has been with the company.                     |
-| `work_accident`       | int64  | Whether the employee experienced an accident at work (0 = No, 1 = Yes).     |
-| `left`                | int64  | Attrition indicator (0 = Stayed, 1 = Left the company).                     |
-| `promotion_last_5years` | int64 | Whether the employee was promoted in the last 5 years (0 = No, 1 = Yes).   |
-| `department`          | str    | Employee’s department (categorical).                                       |
-| `salary`              | str    | Employee’s salary level (categorical: low, medium, high).                   |
+| Column                | Type      | Description                                                                 |
+|------------------------|-----------|-----------------------------------------------------------------------------|
+| satisfaction_level     | float     | Employee’s self-reported satisfaction (0–1 scale).                         |
+| last_evaluation        | float     | Performance evaluation score by management (0–1 scale).                    |
+| number_project         | int       | Number of projects the employee has worked on.                             |
+| average_montly_hours   | int       | Average number of hours worked per month (*note the misspelling retained*).|
+| time_spend_company     | int       | Number of years the employee has been with the company.                     |
+| Work_accident          | int (0/1) | Whether the employee had a workplace accident (1 = yes).                   |
+| left                   | int (0/1) | Target variable: whether the employee left the company (1 = yes).          |
+| promotion_last_5years  | int (0/1) | Whether the employee was promoted in the last 5 years.                     |
+| Department             | category  | Department name (e.g., sales, support, technical).                         |
+| salary                 | category  | Salary category: low, medium, or high.                                     |
 
+---
+
+### Data Quality Notes
+- No missing values detected across columns.
+- `average_montly_hours` has a spelling error but will be kept as-is for reproducibility.
+- `salary` and `Department` are categorical variables requiring encoding for modeling.
+- Target (`left`) is imbalanced: ~24% of employees left vs. ~76% retained.
