@@ -54,17 +54,113 @@ This section will feature independent projects that extend beyond coursework, fo
 
 ---
 
-## 🛠 Tools & Technologies  
+## 🛠 Tools & Technologies
 
-- **Languages:** Python (pandas, scikit-learn, matplotlib, seaborn)  
-- **Visualization & BI:** Tableau, Looker Studio, Plotly  
-- **Collaboration:** Jupyter Notebooks, Markdown  
-- **Version Control:** Git/GitHub  
+- **Languages:** Python (pandas, scikit-learn, matplotlib, seaborn)
+- **Visualization & BI:** Tableau, Looker Studio, Plotly
+- **Collaboration:** Jupyter Notebooks, Markdown
+- **Version Control:** Git/GitHub
 
 ---
 
-## 👩‍💻 Author  
+## 🚀 Setup for Local Development
 
-**Katherine Ygbuhay**  
-Data Analytics & BI Portfolio — 2025  
+### Prerequisites
+- Python 3.8+
+- Jupyter Lab/Notebook
+- Git
+
+### Installation
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/yourusername/portfolio.git
+   cd portfolio
+   ```
+
+2. **Create and activate virtual environment:**
+   ```bash
+   python -m venv .venv
+   source .venv/bin/activate  # On Windows: .venv\Scripts\activate
+   ```
+
+3. **Install the portfolio utilities:**
+   ```bash
+   pip install -e .
+   ```
+
+4. **Launch Jupyter:**
+   ```bash
+   jupyter lab
+   ```
+
+### Using Portfolio Utilities
+
+The `src/` directory contains reusable Python modules for all case studies:
+
+```python
+from src.bootstrap import setup_notebook, write_notes
+from src.viz_access import quick_accessibility_setup
+from src.viz_helpers import pretty_label, barplot_counts
+
+# Setup notebook with accessibility and project paths
+P, df = setup_notebook(
+    raw_filename="your_data_raw.csv",
+    proc_filename="your_data_cleaned.csv",
+    load="proc",
+    project="your_case_study_name"
+)
+```
+
+### Optional: Shell Convenience Scripts
+
+For easier workflow, you can add these aliases to your shell config (`.bashrc`, `.zshrc`, etc.):
+
+```bash
+# Navigate to portfolio root first, then add:
+alias exportnb='./scripts/export_notebooks_menu.sh'
+alias exportfigs='./scripts/export_figures_menu.sh'
+alias newnb='./scripts/new_notebook.sh'
+```
+
+Or use the Makefile commands (see below).
+
+### Makefile Commands
+
+For cross-platform compatibility, use these `make` commands:
+
+```bash
+make install              # Install portfolio utilities
+make export-notebooks     # Export notebooks to markdown
+make export-figures       # Export figures from notebooks
+make new-notebook         # Create a new notebook interactively
+```
+
+---
+
+## 📁 Case Study Structure
+
+Each case study follows a consistent structure:
+
+```
+case_study_name/
+├── notebooks/           # Jupyter notebooks (numbered workflow)
+├── data/
+│   ├── raw/            # Original datasets
+│   └── processed/      # Cleaned datasets
+├── docs/
+│   ├── notes/          # Analysis notes & findings
+│   ├── modeling/       # Model results & summaries
+│   └── stakeholders/   # Business-facing deliverables
+└── reports/
+    ├── figures/        # Exported visualizations
+    └── notebooks_md/   # Markdown versions of notebooks
+```
+
+---
+
+## 👩‍💻 Author
+
+**Katherine Ygbuhay**
+Data Analytics & BI Portfolio — 2025
 

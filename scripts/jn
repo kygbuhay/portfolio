@@ -1,0 +1,152 @@
+#!/bin/bash
+# Quick launcher: jn (Jupyter Notebook)
+# Usage:
+#   jn                    → interactive menu (case study + notebook selection)
+#   jn 01                 → open notebook 01 with auto-close (uses last selected case study)
+#   jn 01 03 05           → open notebooks 1, 3, 5 in tabs with auto-close
+
+# Auto-detect script location (works from anywhere)
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+
+# Find portfolio root by looking for scripts directory
+find_portfolio_root() {
+    local current_dir="$PWD"
+
+    # If we're already in portfolio/scripts, go up one level
+    if [[ "$current_dir" == */portfolio/scripts ]]; then
+        echo "$(dirname "$current_dir")"
+        return
+    fi
+
+    # Look for portfolio directory in common locations
+    local search_paths=(
+        "$HOME/Documents/portfolio"
+        "$HOME/portfolio"
+        "$current_dir/portfolio"
+        "$(find "$HOME" -name "portfolio" -type d -path "*/Documents/*" 2>/dev/null | head -1)"
+    )
+
+    for path in "${search_paths[@]}"; do
+        if [[ -d "$path/scripts" && -f "$path/scripts/jn" ]]; then
+            echo "$path"
+            return
+        fi
+    done
+
+    echo "Error: Could not find portfolio directory" >&2
+    exit 1
+}
+
+PORTFOLIO_ROOT="$(find_portfolio_root)"
+CASE_STUDIES_DIR="$PORTFOLIO_ROOT/coursework/google-advanced-data-analytics"
+
+# Cache file for remembering last selected case study
+CACHE_FILE="$PORTFOLIO_ROOT/.claude/jn_cache"
+
+# Helper function to get or select case study
+get_case_study_path() {
+    # If cache exists and is recent (less than 1 hour old), use it for non-interactive calls
+    if [[ $# -gt 0 && -f "$CACHE_FILE" && -n "$(find "$CACHE_FILE" -mmin -60 2>/dev/null)" ]]; then
+        cat "$CACHE_FILE" 2>/dev/null
+        return
+    fi
+
+    # Find all case studies using a more reliable method
+    local case_studies=()
+
+    if [[ -d "$CASE_STUDIES_DIR" ]]; then
+        for dir in "$CASE_STUDIES_DIR"/*; do
+            if [[ -d "$dir" && -d "$dir/notebooks" ]]; then
+                case_studies+=("$dir")
+            fi
+        done
+    fi
+
+    if [[ ${#case_studies[@]} -eq 0 ]]; then
+        echo "No case studies found in $CASE_STUDIES_DIR" >&2
+        exit 1
+    fi
+
+    # If only one case study, use it
+    if [[ ${#case_studies[@]} -eq 1 ]]; then
+        echo "${case_studies[0]}"
+        return
+    fi
+
+    # Multiple case studies - let user choose
+    echo "📚 Available Case Studies:" >&2
+    echo >&2
+    for i in "${!case_studies[@]}"; do
+        local name=$(basename "${case_studies[$i]}")
+        printf "  %d) %s\n" $((i+1)) "${name//_/ }" >&2
+    done
+    echo >&2
+
+    while true; do
+        read -rp "Select case study (1-${#case_studies[@]}): " choice
+        if [[ "$choice" =~ ^[0-9]+$ ]] && [[ "$choice" -ge 1 ]] && [[ "$choice" -le ${#case_studies[@]} ]]; then
+            local selected="${case_studies[$((choice-1))]}"
+            # Cache the selection
+            mkdir -p "$(dirname "$CACHE_FILE")"
+            echo "$selected" > "$CACHE_FILE"
+            echo "$selected"
+            return
+        fi
+        echo "Please enter a number between 1 and ${#case_studies[@]}" >&2
+    done
+}
+
+# If no args, run interactive tab manager
+if [ $# -eq 0 ]; then
+    exec "$SCRIPT_DIR/jupyter_tab_manager.sh"
+fi
+
+# Get the case study to work with
+PROJECT_ROOT="$(get_case_study_path "$@")"
+NOTEBOOKS_DIR="$PROJECT_ROOT/notebooks"
+
+if [[ ! -d "$NOTEBOOKS_DIR" ]]; then
+    echo "No notebooks directory found in: $PROJECT_ROOT"
+    exit 1
+fi
+
+# Single notebook with auto-close
+if [ $# -eq 1 ]; then
+    NB_PATTERN="$1"
+
+    # Find matching notebook (excluding checkpoints)
+    NOTEBOOK=$(find "$NOTEBOOKS_DIR" -name "${NB_PATTERN}*.ipynb" -type f ! -path "*/.ipynb_checkpoints/*" | head -1)
+
+    if [ -z "$NOTEBOOK" ]; then
+        echo "No notebook found matching: $NB_PATTERN in $(basename "$PROJECT_ROOT")"
+        exit 1
+    fi
+
+    echo "🚀 Launching $(basename "$NOTEBOOK") from $(basename "$PROJECT_ROOT")"
+    # Launch with auto-close
+    exec "$SCRIPT_DIR/jupyter_auto_close.py" "$NOTEBOOK"
+fi
+
+# Multiple notebooks in tabs
+echo "Opening ${#@} notebooks in tabbed terminal from $(basename "$PROJECT_ROOT")..."
+
+TABS=""
+for NB_PATTERN in "$@"; do
+    NOTEBOOK=$(find "$NOTEBOOKS_DIR" -name "${NB_PATTERN}*.ipynb" -type f ! -path "*/.ipynb_checkpoints/*" | head -1)
+
+    if [ -z "$NOTEBOOK" ]; then
+        echo "⚠️  Skipping: $NB_PATTERN (not found)"
+        continue
+    fi
+
+    NB_NAME=$(basename "$NOTEBOOK")
+    TABS="$TABS --tab --title='$NB_NAME' -- bash -c 'cd \"$PROJECT_ROOT\" && python3 \"$SCRIPT_DIR/jupyter_auto_close.py\" \"$NOTEBOOK\"'"
+done
+
+if [ -z "$TABS" ]; then
+    echo "No valid notebooks found"
+    exit 1
+fi
+
+# Launch gnome-terminal with tabs
+eval "gnome-terminal $TABS"

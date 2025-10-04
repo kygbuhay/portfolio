@@ -6,6 +6,9 @@ __pycache__/
 *.so
 .ipynb_checkpoints/
 *.nbconvert.ipynb
+*.egg-info/
+dist/
+build/
 
 # Environments / Tooling
 .venv/
@@ -16,6 +19,9 @@ venv/
 .idea/
 .pytest_cache/
 .mypy_cache/
+.coverage
+htmlcov/
+.claude/
 
 # OS junk
 .DS_Store

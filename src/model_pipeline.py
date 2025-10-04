@@ -1,5 +1,5 @@
 """
-Model pipeline utilities for the TikTok Claims Classification project.
+Model pipeline utilities for portfolio case studies.
 """
 
 from sklearn.ensemble import RandomForestClassifier
@@ -15,7 +15,7 @@ def build_pipeline() -> Pipeline:
 
     Returns:
         Pipeline: A scikit-learn Pipeline object configured with preprocessing
-        and classification steps.
+        and classification steps
     """
     pipeline = Pipeline([
         ("scaler", StandardScaler(with_mean=False)),

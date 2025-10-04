@@ -1,0 +1,28 @@
+# Temporary meta-documentation (Claude's working notes)
+NOTEBOOK_FIXES.md
+NOTEBOOK_UPDATES_COMPLETE.md
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv
+
+# Jupyter
+.ipynb_checkpoints/
+*-checkpoint.ipynb
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+
+# Data (optional - uncomment if datasets are large or sensitive)
+# data/raw/*.csv
+# data/processed/*.csv

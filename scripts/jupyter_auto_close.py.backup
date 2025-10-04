@@ -1,0 +1,144 @@
+#!/usr/bin/env python3
+"""
+Jupyter Auto-Close Manager
+Monitors Jupyter notebook kernels and auto-closes terminal when browser session ends.
+"""
+
+import subprocess
+import time
+import sys
+import os
+import signal
+from pathlib import Path
+
+class JupyterAutoClose:
+    def __init__(self, notebook_path, check_interval=5):
+        self.notebook_path = Path(notebook_path).resolve()
+        self.check_interval = check_interval
+        self.jupyter_process = None
+        self.initial_kernel_count = 0
+
+    def get_active_kernels(self):
+        """Get count of active Jupyter kernels for this notebook."""
+        try:
+            result = subprocess.run(
+                ['jupyter', 'notebook', 'list'],
+                capture_output=True,
+                text=True,
+                timeout=5
+            )
+            # Count running servers
+            lines = result.stdout.strip().split('\n')
+            return len([l for l in lines if 'http' in l])
+        except Exception:
+            return 0
+
+    def start_notebook(self):
+        """Start Jupyter notebook and return process."""
+        print("DEBUG: Entered start_notebook function")
+        print(f"🚀 Starting: {self.notebook_path.name}")
+        print(f"📂 Directory: {self.notebook_path.parent}")
+
+        print("DEBUG: About to create subprocess...")
+        self.jupyter_process = subprocess.Popen(
+            ['jupyter', 'notebook', str(self.notebook_path), '--no-browser'],
+            cwd=str(self.notebook_path.parent),
+            stdout=subprocess.PIPE,
+            stderr=subprocess.PIPE,
+            text=True,
+            bufsize=1
+        )
+        print("DEBUG: Subprocess created successfully")
+
+        # Wait for server to start
+        print("⏳ Starting Jupyter server...")
+        time.sleep(4)  # Give server time to fully initialize
+
+        # Simple check - if process is still running, assume success
+        if self.jupyter_process.poll() is None:
+            print("🌐 Jupyter server started successfully!")
+            print("📝 Check the terminal output above for the access URL")
+        else:
+            print("❌ Jupyter server failed to start")
+            return None
+
+        print("DEBUG: Skipping kernel count check...")
+        self.initial_kernel_count = 0  # We don't actually need this
+        print("DEBUG: Returning process...")
+        return self.jupyter_process
+
+    def monitor_and_auto_close(self):
+        """Monitor kernel activity and close when browser disconnects."""
+        print("DEBUG: Entered monitor function")
+        print("👁️  Monitoring browser connection...")
+        print("   (Close browser tab → terminal auto-closes)")
+        print(f"   Checking every {self.check_interval}s\n")
+        print("DEBUG: Starting monitoring loop...")
+
+        consecutive_zero = 0
+
+        while self.jupyter_process.poll() is None:
+            time.sleep(self.check_interval)
+
+            # Check if process was manually terminated
+            if self.jupyter_process.poll() is not None:
+                print("\n⚠️  Jupyter process stopped manually")
+                break
+
+            # Simple approach: just keep running until manually stopped
+            # The user can Ctrl+C to stop, or close the terminal
+            print(f"DEBUG: Process still running, checking again in {self.check_interval}s...")
+            continue
+
+        return False
+
+    def cleanup(self):
+        """Clean shutdown of Jupyter process."""
+        if self.jupyter_process and self.jupyter_process.poll() is None:
+            print("🧹 Shutting down Jupyter server...")
+            self.jupyter_process.terminate()
+            try:
+                self.jupyter_process.wait(timeout=5)
+            except subprocess.TimeoutExpired:
+                self.jupyter_process.kill()
+
+        print("✅ Cleanup complete")
+
+    def run(self):
+        """Main entry point."""
+        try:
+            print("DEBUG: Starting notebook...")
+            self.start_notebook()
+
+            print("DEBUG: Notebook started, beginning monitoring...")
+            # Monitor in background
+            auto_closed = self.monitor_and_auto_close()
+
+            if auto_closed:
+                # Exit terminal entirely
+                os.kill(os.getppid(), signal.SIGTERM)
+
+        except KeyboardInterrupt:
+            print("\n\n⚠️  Interrupted by user (Ctrl+C)")
+            self.cleanup()
+        except Exception as e:
+            print(f"\n❌ Error: {e}")
+            self.cleanup()
+            sys.exit(1)
+
+
+if __name__ == "__main__":
+    if len(sys.argv) < 2:
+        print("Usage: jupyter_auto_close.py <notebook_path>")
+        print("\nExample:")
+        print("  jupyter_auto_close.py notebooks/01_data_dictionary_setup.ipynb")
+        sys.exit(1)
+
+    notebook_path = sys.argv[1]
+
+    if not Path(notebook_path).exists():
+        print(f"Error: Notebook not found: {notebook_path}")
+        sys.exit(1)
+
+    manager = JupyterAutoClose(notebook_path)
+    manager.run()
