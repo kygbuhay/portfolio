@@ -38,8 +38,11 @@ __MACOSX/
 **/data/raw/**/*.tgz
 **/data/raw/**/*.7z
 
-# Reports & Figures
-**/reports/figures/**
+# Reports & Figures (include all image files, exclude temp/cache)
+**/reports/figures/**/.DS_Store
+**/reports/figures/**/Thumbs.db
+**/reports/figures/**/*.tmp
+# Include all image files explicitly
 !**/reports/figures/
 !**/reports/figures/**/*.png
 !**/reports/figures/**/*.jpg
