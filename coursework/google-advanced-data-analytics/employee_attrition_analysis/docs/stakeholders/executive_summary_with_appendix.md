@@ -1,82 +1,68 @@
 # Executive Summary
 
-**Project:** Employee Attrition Analysis  
-**Owner:** Katherine Ygbuhay  
-**Updated:** October 2025  
+**Project:** Employee Attrition Analysis
+**Owner:** Katherine Ygbuhay
+**Updated:** October 2025
 
 ---
 
-## Business Objective  
-Salifort’s leadership asked: *“Why are employees leaving, and what can we do to reduce attrition?”*  
-The business goal is to identify key drivers of turnover and develop a predictive model to guide proactive retention strategies.  
+## Business Objective
+Salifort's leadership asked: *"Why are employees leaving, and what can we do to reduce attrition?"*
+The business goal is to identify key drivers of turnover and develop a predictive model to guide proactive retention strategies.
 
 ---
 
-## Dataset Overview  
-The dataset represents HR records of employees (n ≈ 15k), including demographic, performance, and workplace attributes.  
+## Dataset Overview
+The dataset represents HR records of employees (n ≈ 15k), including demographic, performance, and workplace attributes.
 
-**Highlights:**  
-- **Imbalance:** Only ~23–25% of employees left.  
-- **Departments:** Sales, technical, and support functions dominate the workforce.  
-- **Sensitive proxies:** Salary bands and department may indirectly encode equity concerns.  
+**Highlights:**
+- **Imbalance:** Only ~23–25% of employees left.
+- **Departments:** Sales, technical, and support functions dominate the workforce.
+- **Sensitive proxies:** Salary bands and department may indirectly encode equity concerns.
 
-![Class Balance](../../reports/../../reports/figures/03_exploratory_analysis/class_balance_attrition_left.png)
-![Department Distribution](../../reports/../../reports/figures/03_exploratory_analysis/department_distribution.png)  
-
----
-
-## Approach Summary  
-We followed a structured pipeline:  
-
-1. **EDA:** Explored attrition patterns across satisfaction, workload, and department.  
-2. **Baseline model:** Logistic regression with balanced class weights.  
-3. **Tree-based models:** Random Forest and XGBoost for non-linear patterns.  
-4. **Model selection:** Chose champion via validation metrics (ROC-AUC prioritized, with F1/recall tie-breakers).  
-5. **Ethics review:** Identified bias risks, proxy variables, and mitigations.  
-
-![Satisfaction vs Attrition](../../reports/figures/03_exploratory_analysis/satisfaction_level_vs_attrition.png)  
+![Class Balance](../../reports/figures/03_exploratory_analysis/class_balance_attrition_left.png)
+![Department Distribution](../../reports/figures/03_exploratory_analysis/department_distribution.png)
 
 ---
 
-## Key Findings  
-- **Satisfaction level is the single strongest predictor:** Employees with low satisfaction are disproportionately likely to leave.  
-- **Tenure and workload interact:** Short tenure + high projects correlate with attrition risk.  
-- **Department matters:** Sales and support see elevated attrition rates compared to R&D or management.  
+## Approach Summary
+We followed a structured pipeline:
+
+1. **EDA:** Explored attrition patterns across satisfaction, workload, and department.
+2. **Baseline model:** Logistic regression with balanced class weights.
+3. **Tree-based models:** Random Forest and XGBoost for non-linear patterns.
+4. **Model selection:** Chose champion via validation metrics (ROC-AUC prioritized, with F1/recall tie-breakers).
+5. **Ethics review:** Identified bias risks, proxy variables, and mitigations.
+
+![Satisfaction vs Attrition](../../reports/figures/03_exploratory_analysis/satisfaction_level_vs_attrition.png)
 
 ---
 
-## Model Performance (Lay Translation)  
-- **Champion model:** Random Forest (after comparing to Logistic Regression).  
-- **Validation ROC-AUC ~0.85:** The model can correctly rank leavers vs. stayers 85% of the time.  
-- **Recall ~0.72 for “leavers”:** Roughly 7 out of 10 at-risk employees are identified.  
-- **Interpretability trade-off:** Logistic regression is simpler, but trees provide better recall and stability.  
-
-![Confusion Matrix](../../reports/figures/06_model_selection/confusion_matrix.png)  
-![ROC Curve](../../reports/figures/06_model_selection/roc_curve.png)  
+## Key Findings
+- **Satisfaction level is the single strongest predictor:** Employees with low satisfaction are disproportionately likely to leave.
+- **Tenure and workload interact:** Short tenure + high projects correlate with attrition risk.
+- **Department matters:** Sales and support see elevated attrition rates compared to R&D or management.
 
 ---
 
-## Actionable Recommendations  
-- **Retention focus:** Target interventions for low-satisfaction and high-project-load employees.  
-- **Manager training:** Equip supervisors in sales/support to detect early risk signals.  
-- **Workload balancing:** Monitor projects per employee, especially in first 1–2 years.  
-- **Policy safeguards:** Use model output for supportive outreach, not punitive actions.  
+## Model Performance (Lay Translation)
+- **Champion model:** Random Forest (after comparing to Logistic Regression).
+- **Validation ROC-AUC ~0.85:** The model can correctly rank leavers vs. stayers 85% of the time.
+- **Recall ~0.72 for "leavers":** Roughly 7 out of 10 at-risk employees are identified.
+- **Interpretability trade-off:** Logistic regression is simpler, but trees provide better recall and stability.
+
+![Confusion Matrix](../../reports/figures/06_model_selection/confusion_matrix.png)
+![ROC Curve](../../reports/figures/06_model_selection/roc_curve.png)
 
 ---
 
-## Ethical Considerations  
-- **Proxies:** Salary and department risk encoding structural inequities.  
-- **Error risks:** False positives → wasted resources; false negatives → missed interventions.  
-- **Mitigations:**  
-  - Exclude explicitly sensitive features.  
-  - Audit subgroup performance (recall by salary band, department).  
-  - Document thresholds and ensure stakeholder governance.  
+## Actionable Recommendations
+- **Retention focus:** Target interventions for low-satisfaction and high-project-load employees.
+- **Manager training:** Equip supervisors in sales/support to detect early risk signals.
+- **Workload balancing:** Monitor projects per employee, especially in first 1–2 years.
+- **Policy safeguards:** Use model output for supportive outreach, not punitive actions.
 
-✅ *Concerns documented in `docs/notes/ethics_bias_review.md`.*  
-
----
-
-## Conclusion  
+## Conclusion
 This analysis shows that attrition at Salifort is **driven most strongly by low satisfaction, early tenure, and workload imbalances**, with department-level disparities. A Random Forest model provides a strong predictive foundation, but success depends on **responsible use**: coupling predictions with human judgment, regular monitoring, and ethical safeguards.
 
 ---
@@ -127,4 +113,3 @@ This analysis shows that attrition at Salifort is **driven most strongly by low 
 
 ### Attrition by Salary Band (Ethics)
 ![Attrition by Salary Band (Ethics)](../../reports/figures/07_ethics_bias_review/attrition_rate_by_salary.png)
-
