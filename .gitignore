@@ -59,3 +59,18 @@ __MACOSX/
 *.log
 *.tmp
 *.bak
+
+# Session artifacts and development notes
+NOTEBOOK_FIXES.md
+NOTEBOOK_UPDATES*.md
+CHANGES_SUMMARY.md
+STANDARDIZATION_REPORT.md
+**/NOTEBOOK_FIXES.md
+**/NOTEBOOK_UPDATES*.md
+**/CHANGES_SUMMARY.md
+**/STANDARDIZATION_REPORT.md
+
+# Claude session documentation (keep out of main repo)
+*claude_session*.md
+*session_notes*.md
+*work_log*.md

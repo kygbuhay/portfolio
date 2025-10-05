@@ -29,6 +29,7 @@ This analysis identifies key drivers of employee turnover and develops a predict
 - **Interpretability:** Feature importance rankings guide HR policy decisions
 
 ➡️ [**View Full Executive Summary with Visualizations**](docs/stakeholders/executive_summary_with_appendix.md)
+📊 [**Visual Workflow Overview**](CASE_STUDY_OVERVIEW.md)
 
 ---
 

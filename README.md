@@ -24,6 +24,8 @@ This repository showcases **enterprise-grade data science workflows** through co
 
 ## 📊 **Featured Case Studies**
 
+*🔍 [**View Complete Methodology Framework →**](METHODOLOGY_SHOWCASE.md)*
+
 ### 🏆 **Employee Attrition Analysis**
 *Comprehensive HR analytics to identify turnover drivers and develop predictive retention strategies*
 
