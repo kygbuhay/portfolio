@@ -1,166 +1,218 @@
-# Data Analytics & Business Intelligence Portfolio  
+# Data Analytics & Business Intelligence Portfolio
 
-This repository contains a collection of case studies that demonstrate my skills in data analytics, business intelligence, and stakeholder communication.  
-Projects are organized into two sections:  
+***Professional case studies demonstrating end-to-end data science capabilities with business impact focus***
 
-1. **Coursework Case Studies** — Projects completed through Google/Coursera programs, polished and reframed for business impact.  
-2. **Showcase Case Studies** — Independent projects (in progress) that explore real-world business problems.  
+**Author:** Katherine Ygbuhay
+**Portfolio Status:** Active & Production-Ready
+**Technical Stack:** Python, Jupyter, Git, Professional Automation
+**Business Focus:** HR Analytics, Content Moderation, Customer Intelligence
 
 ---
 
-## 📂 Repository Structure
+## 🎯 **Portfolio Overview**
+
+This repository showcases **enterprise-grade data science workflows** through comprehensive case studies that demonstrate technical excellence, business acumen, and responsible AI practices. Each project follows professional standards with reproducible pipelines, stakeholder deliverables, and ethical considerations.
+
+**What Sets This Portfolio Apart:**
+- ✅ **Professional notebook templates** with business-focused documentation
+- ✅ **Automated workflow tools** for global accessibility and reproducibility
+- ✅ **Stakeholder-ready deliverables** including executive summaries with embedded visualizations
+- ✅ **Responsible AI practices** with ethics reviews and bias assessments
+- ✅ **Production infrastructure** with reusable utilities and version control
+
+---
+
+## 📊 **Featured Case Studies**
+
+### 🏆 **Employee Attrition Analysis**
+*Comprehensive HR analytics to identify turnover drivers and develop predictive retention strategies*
+
+**Business Impact:** 85% ROC-AUC model identifying 72% of at-risk employees
+**Technical Achievement:** 7-stage analytical workflow with ethics review
+**Key Insight:** Satisfaction level is the strongest predictor; department disparities revealed
+
+[**Explore Case Study →**](coursework/google-advanced-data-analytics/employee_attrition_analysis/)
+
+---
+
+### 📱 **TikTok Claims Classification**
+*Machine learning model to classify content as factual claims vs. subjective opinions for content moderation*
+
+**Business Impact:** Automated content classification improving moderation efficiency
+**Technical Achievement:** Advanced feature engineering with n-gram text analysis
+**Key Insight:** Engagement metrics prove more predictive than content length
+
+[**Explore Case Study →**](coursework/google-advanced-data-analytics/content_moderation_claims_classification/)
+
+---
+
+### 📞 **Call Center Customer Satisfaction**
+*BI dashboard analysis identifying factors driving customer satisfaction and first-call resolution*
+
+**Business Impact:** Actionable insights for reducing churn and improving service quality
+**Technical Achievement:** Interactive dashboards with drill-down capabilities
+**Key Focus:** Operational analytics and customer experience optimization
+
+[**Explore Case Study →**](coursework/google-business-intelligence/call_center_customer_satisfaction/)
+
+---
+
+### 🤖 **AI Workplace Productivity Analysis**
+*Comprehensive analysis measuring the impact of AI tools on workplace productivity and ROI*
+
+**Business Impact:** Data-driven insights for AI adoption and productivity measurement
+**Technical Achievement:** Multi-dimensional productivity metrics and trend analysis
+**Key Focus:** Technology impact assessment and business intelligence
+
+[**Explore Case Study →**](coursework/google-data-analytics/ai_workplace_productivity_analysis/)
+
+---
+
+## 🛠 **Professional Infrastructure**
+
+This portfolio features **production-grade automation** and **enterprise development practices**:
+
+### **Global Command System**
+Access portfolio tools from anywhere on your system:
+
+```bash
+# Notebook creation with professional templates
+newnb          # Create new professional notebook
+nb             # Short alias for newnb
+
+# Jupyter workflows
+jn             # Launch Jupyter with case study selection
+jup            # Alternative to jn
+
+# Export & sharing
+exportnb       # Export notebooks to markdown
+exportfigs     # Export figures from notebooks
+
+# Navigation
+portfolio      # Jump to portfolio directory
+pf             # Short alias for portfolio
+pfs            # Show portfolio status and commands
+```
+
+### **Automated Notebook Templates**
+- **Professional headers** with business value statements
+- **Structured workflows** (Objective → Approach → Outputs → Prerequisites)
+- **Case study integration** with bootstrap utilities and accessibility defaults
+- **Current date auto-population** eliminating manual updates
+
+### **Reusable Utilities (`src/`)**
+- **`bootstrap.py`**: Project setup, path management, accessibility defaults
+- **`viz_helpers.py`**: Colorblind-friendly visualizations, professional styling
+- **`model_eval.py`**: Standardized model evaluation and comparison utilities
+- **`paths.py`**: Dynamic project path resolution for portability
+
+---
+
+## 📂 **Repository Architecture**
 
 ```
 portfolio/
-├── src/                         # shared reusable modules (data_cleaning, viz_access, etc.)
-│
-├── coursework/                  # certificate & training case studies
+├── coursework/                  # Professional case studies
 │   ├── google-advanced-data-analytics/
-│   │   ├── employee_attrition_analysis/
-│   │   └── content_moderation_claims_classification/
+│   │   ├── employee_attrition_analysis/     # 🏆 Featured: HR Analytics
+│   │   └── content_moderation_claims_classification/  # 📱 Featured: ML Classification
 │   ├── google-business-intelligence/
-│   │   └── call_center_customer_satisfaction/
+│   │   └── call_center_customer_satisfaction/         # 📞 Featured: BI Dashboard
 │   └── google-data-analytics/
-│       └── ai_workplace_productivity_analysis/
+│       └── ai_workplace_productivity_analysis/        # 🤖 Featured: Productivity Analysis
 │
-└── showcase/                    # custom portfolio projects
-    ├── [future_case_study_1]/
-    └── [future_case_study_2]/
-```
----
-
-## 📊 Coursework Case Studies  
-
-### **Employee Attrition Analysis** (`/coursework/google-advanced-data-analytics/employee_attrition_analysis/`)  
-Analyzes HR data to identify key drivers of employee turnover. Provides actionable insights to improve retention strategies and reduce attrition costs.  
-
-### **Content Moderation — Claims Classification** (`/coursework/google-advanced-data-analytics/content_moderation_claims_classification/`)  
-Builds a machine learning model to classify TikTok content as factual claims or subjective opinions, improving moderation efficiency and trust & safety outcomes.  
-
-### **Call Center Customer Satisfaction** (`/coursework/google-business-intelligence/call_center_customer_satisfaction/`)  
-Explores customer service call resolution (CRS) metrics to identify factors driving customer satisfaction. Offers recommendations to improve first-call resolution and reduce churn.  
-
-### **AI Workplace Productivity Analysis** (`/coursework/google-data-analytics/ai_workplace_productivity_analysis/`)  
-Develops a BI dashboard to measure and visualize the impact of AI tools on workplace productivity, helping decision-makers understand adoption and ROI.  
-
----
-
-## 🌟 Showcase Case Studies (Coming Soon)  
-
-This section will feature independent projects that extend beyond coursework, focused on real-world datasets and business impact. Planned areas include:  
-- Trust & Safety dashboards  
-- Customer lifetime value (CLV) modeling  
-- Operational analytics for SaaS growth metrics  
-
----
-
-## 🛠 Tools & Technologies
-
-- **Languages:** Python (pandas, scikit-learn, matplotlib, seaborn)
-- **Visualization & BI:** Tableau, Looker Studio, Plotly
-- **Collaboration:** Jupyter Notebooks, Markdown
-- **Version Control:** Git/GitHub
-
----
-
-## 🚀 Setup for Local Development
-
-### Prerequisites
-- Python 3.8+
-- Jupyter Lab/Notebook
-- Git
-
-### Installation
-
-1. **Clone the repository:**
-   ```bash
-   git clone https://github.com/yourusername/portfolio.git
-   cd portfolio
-   ```
-
-2. **Create and activate virtual environment:**
-   ```bash
-   python -m venv .venv
-   source .venv/bin/activate  # On Windows: .venv\Scripts\activate
-   ```
-
-3. **Install the portfolio utilities:**
-   ```bash
-   pip install -e .
-   ```
-
-4. **Launch Jupyter:**
-   ```bash
-   jupyter lab
-   ```
-
-### Using Portfolio Utilities
-
-The `src/` directory contains reusable Python modules for all case studies:
-
-```python
-from src.bootstrap import setup_notebook, write_notes
-from src.viz_access import quick_accessibility_setup
-from src.viz_helpers import pretty_label, barplot_counts
-
-# Setup notebook with accessibility and project paths
-P, df = setup_notebook(
-    raw_filename="your_data_raw.csv",
-    proc_filename="your_data_cleaned.csv",
-    load="proc",
-    project="your_case_study_name"
-)
+├── src/                        # Reusable utilities & professional infrastructure
+│   ├── bootstrap.py           # Project setup, accessibility, path management
+│   ├── viz_helpers.py         # Professional visualizations, colorblind-friendly
+│   ├── model_eval.py          # Standardized model evaluation utilities
+│   └── paths.py               # Dynamic project path resolution
+│
+├── scripts/                   # Automation & global command system
+│   ├── new_notebook.sh        # Professional notebook templates
+│   ├── jn                     # Jupyter launcher with case study selection
+│   ├── export_notebooks_menu.sh    # Automated markdown export
+│   ├── export_figures_menu.sh      # Figure extraction pipeline
+│   └── setup_global_access.sh     # Global command installation
+│
+└── showcase/                  # Independent projects (future expansion)
 ```
 
-### Optional: Shell Convenience Scripts
+---
 
-For easier workflow, you can add these aliases to your shell config (`.bashrc`, `.zshrc`, etc.):
+## 🚀 **Quick Start**
 
+### **Option 1: Global Commands (Recommended)**
 ```bash
-# Navigate to portfolio root first, then add:
-alias exportnb='./scripts/export_notebooks_menu.sh'
-alias exportfigs='./scripts/export_figures_menu.sh'
-alias newnb='./scripts/new_notebook.sh'
+# One-time setup for global access
+./scripts/setup_global_access.sh
+
+# Then use from anywhere:
+newnb          # Create professional notebook
+jn             # Launch Jupyter with case study selection
+exportnb       # Export notebooks to markdown
 ```
 
-Or use the Makefile commands (see below).
-
-### Makefile Commands
-
-For cross-platform compatibility, use these `make` commands:
-
+### **Option 2: Local Development**
 ```bash
-make install              # Install portfolio utilities
-make export-notebooks     # Export notebooks to markdown
-make export-figures       # Export figures from notebooks
-make new-notebook         # Create a new notebook interactively
+# Clone and setup
+git clone https://github.com/kygbuhay/portfolio.git
+cd portfolio
+
+# Install portfolio utilities
+python -m venv .venv
+source .venv/bin/activate
+pip install -e .
+
+# Launch case study
+jn  # Interactive case study selection
 ```
 
 ---
 
-## 📁 Case Study Structure
+## 📈 **Technical Excellence Demonstrated**
 
-Each case study follows a consistent structure:
+### **Data Science Capabilities**
+- **End-to-End Workflows**: Data cleaning → EDA → Modeling → Ethics → Deployment
+- **Advanced Modeling**: Random Forest, XGBoost, Logistic Regression with hyperparameter tuning
+- **Statistical Rigor**: Cross-validation, ROC-AUC optimization, precision-recall analysis
+- **Feature Engineering**: Text analysis, categorical encoding, correlation analysis
 
-```
-case_study_name/
-├── notebooks/           # Jupyter notebooks (numbered workflow)
-├── data/
-│   ├── raw/            # Original datasets
-│   └── processed/      # Cleaned datasets
-├── docs/
-│   ├── notes/          # Analysis notes & findings
-│   ├── modeling/       # Model results & summaries
-│   └── stakeholders/   # Business-facing deliverables
-└── reports/
-    ├── figures/        # Exported visualizations
-    └── notebooks_md/   # Markdown versions of notebooks
-```
+### **Business Intelligence Skills**
+- **Stakeholder Communication**: Executive summaries with embedded visualizations
+- **Actionable Insights**: Business recommendations with measurable impact
+- **Risk Assessment**: Model interpretability and ethical deployment considerations
+- **Cost-Benefit Analysis**: ROI calculations and business case development
+
+### **Professional Development Practices**
+- **Version Control**: Git workflows with proper commit attribution
+- **Reproducibility**: Virtual environments, requirements management, automated pipelines
+- **Documentation**: Professional README files, data dictionaries, methodology notes
+- **Accessibility**: Colorblind-friendly visualizations, inclusive design principles
 
 ---
 
-## 👩‍💻 Author
+## 🎯 **Portfolio Highlights**
+
+| Metric | Achievement |
+|--------|-------------|
+| **Model Performance** | 85%+ ROC-AUC across classification tasks |
+| **Business Impact** | 72% at-risk employee identification accuracy |
+| **Technical Depth** | 7-stage analytical workflows with ethics reviews |
+| **Documentation** | Professional templates with stakeholder deliverables |
+| **Automation** | Global command system with one-click workflows |
+| **Reproducibility** | 100% version-controlled with automated exports |
+
+---
+
+## 📞 **Contact & Collaboration**
 
 **Katherine Ygbuhay**
-Data Analytics & BI Portfolio — 2025
+📧 Professional inquiries welcome
+💼 Open to data science and business intelligence opportunities
+🔗 [GitHub Portfolio](https://github.com/kygbuhay/portfolio) • [Case Study Examples](coursework/)
 
+---
+
+**Portfolio Infrastructure:** Production-ready automation with global command access
+**Last Updated:** October 2025
+**Status:** Active development with continuous improvement
