@@ -2,23 +2,23 @@
 
 ***Professional case studies demonstrating end-to-end data science capabilities with business impact focus***
 
-**Author:** Katherine Ygbuhay
-**Portfolio Status:** Active & Production-Ready
-**Technical Stack:** Python, Jupyter, Git, Professional Automation
-**Business Focus:** HR Analytics, Content Moderation, Customer Intelligence
+**Author:** Katherine Ygbuhay  
+**Portfolio Status:** Active & Production-Ready  
+**Technical Stack:** Python, Jupyter, Git, Professional Automation  
+**Business Focus:** HR Analytics, Content Moderation, Customer Intelligence  
 
 ---
 
 ## 🎯 **Portfolio Overview**
 
-This repository showcases **enterprise-grade data science workflows** through comprehensive case studies that demonstrate technical excellence, business acumen, and responsible AI practices. Each project follows professional standards with reproducible pipelines, stakeholder deliverables, and ethical considerations.
+This repository showcases **enterprise-grade data science workflows** through comprehensive case studies that demonstrate technical excellence, business acumen, and responsible AI practices. Each project is designed for real business impact and professional deployment.
 
-**What Sets This Portfolio Apart:**
-- ✅ **Professional notebook templates** with business-focused documentation
-- ✅ **Automated workflow tools** for global accessibility and reproducibility
-- ✅ **Stakeholder-ready deliverables** including executive summaries with embedded visualizations
-- ✅ **Responsible AI practices** with ethics reviews and bias assessments
-- ✅ **Production infrastructure** with reusable utilities and version control
+**What Sets This Portfolio Apart:**  
+- ✅ **Professional notebook templates** with business-focused documentation  
+- ✅ **Automated workflow tools** for global accessibility and reproducibility  
+- ✅ **Stakeholder-ready deliverables** including executive summaries with embedded visualizations  
+- ✅ **Responsible AI practices** with ethics reviews and bias assessments  
+- ✅ **Production infrastructure** with reusable utilities and version control  
 
 ---
 
@@ -29,9 +29,9 @@ This repository showcases **enterprise-grade data science workflows** through co
 ### 🏆 **Employee Attrition Analysis**
 *Comprehensive HR analytics to identify turnover drivers and develop predictive retention strategies*
 
-**Business Impact:** 85% ROC-AUC model identifying 72% of at-risk employees
-**Technical Achievement:** 7-stage analytical workflow with ethics review
-**Key Insight:** Satisfaction level is the strongest predictor; department disparities revealed
+**Business Impact:** 85% ROC-AUC model identifying 72% of at-risk employees  
+**Technical Achievement:** 7-stage analytical workflow with ethics review  
+**Key Insight:** Satisfaction level is the strongest predictor; department disparities revealed  
 
 [**Explore Case Study →**](coursework/google-advanced-data-analytics/employee_attrition_analysis/)
 
@@ -40,9 +40,9 @@ This repository showcases **enterprise-grade data science workflows** through co
 ### 📱 **TikTok Claims Classification**
 *Machine learning model to classify content as factual claims vs. subjective opinions for content moderation*
 
-**Business Impact:** Automated content classification improving moderation efficiency
-**Technical Achievement:** Advanced feature engineering with n-gram text analysis
-**Key Insight:** Engagement metrics prove more predictive than content length
+**Business Impact:** Automated content classification improving moderation efficiency  
+**Technical Achievement:** Advanced feature engineering with n-gram text analysis  
+**Key Insight:** Engagement metrics prove more predictive than content length  
 
 [**Explore Case Study →**](coursework/google-advanced-data-analytics/content_moderation_claims_classification/)
 
@@ -51,9 +51,9 @@ This repository showcases **enterprise-grade data science workflows** through co
 ### 📞 **Call Center Customer Satisfaction**
 *BI dashboard analysis identifying factors driving customer satisfaction and first-call resolution*
 
-**Business Impact:** Actionable insights for reducing churn and improving service quality
-**Technical Achievement:** Interactive dashboards with drill-down capabilities
-**Key Focus:** Operational analytics and customer experience optimization
+**Business Impact:** Actionable insights for reducing churn and improving service quality  
+**Technical Achievement:** Interactive dashboards with drill-down capabilities  
+**Key Focus:** Operational analytics and customer experience optimization  
 
 [**Explore Case Study →**](coursework/google-business-intelligence/call_center_customer_satisfaction/)
 
@@ -62,9 +62,9 @@ This repository showcases **enterprise-grade data science workflows** through co
 ### 🤖 **AI Workplace Productivity Analysis**
 *Comprehensive analysis measuring the impact of AI tools on workplace productivity and ROI*
 
-**Business Impact:** Data-driven insights for AI adoption and productivity measurement
-**Technical Achievement:** Multi-dimensional productivity metrics and trend analysis
-**Key Focus:** Technology impact assessment and business intelligence
+**Business Impact:** Data-driven insights for AI adoption and productivity measurement  
+**Technical Achievement:** Multi-dimensional productivity metrics and trend analysis  
+**Key Focus:** Technology impact assessment and business intelligence  
 
 [**Explore Case Study →**](coursework/google-data-analytics/ai_workplace_productivity_analysis/)
 
@@ -97,16 +97,16 @@ pfs            # Show portfolio status and commands
 ```
 
 ### **Automated Notebook Templates**
-- **Professional headers** with business value statements
-- **Structured workflows** (Objective → Approach → Outputs → Prerequisites)
-- **Case study integration** with bootstrap utilities and accessibility defaults
-- **Current date auto-population** eliminating manual updates
+- **Professional headers** with business value statements  
+- **Structured workflows** (Objective → Approach → Outputs → Prerequisites)  
+- **Case study integration** with bootstrap utilities and accessibility defaults  
+- **Current date auto-population** eliminating manual updates  
 
 ### **Reusable Utilities (`src/`)**
-- **`bootstrap.py`**: Project setup, path management, accessibility defaults
-- **`viz_helpers.py`**: Colorblind-friendly visualizations, professional styling
-- **`model_eval.py`**: Standardized model evaluation and comparison utilities
-- **`paths.py`**: Dynamic project path resolution for portability
+- **`bootstrap.py`**: Project setup, path management, accessibility defaults  
+- **`viz_helpers.py`**: Colorblind-friendly visualizations, professional styling  
+- **`model_eval.py`**: Standardized model evaluation and comparison utilities  
+- **`paths.py`**: Dynamic project path resolution for portability  
 
 ---
 
@@ -174,22 +174,22 @@ jn  # Interactive case study selection
 ## 📈 **Technical Excellence Demonstrated**
 
 ### **Data Science Capabilities**
-- **End-to-End Workflows**: Data cleaning → EDA → Modeling → Ethics → Deployment
-- **Advanced Modeling**: Random Forest, XGBoost, Logistic Regression with hyperparameter tuning
-- **Statistical Rigor**: Cross-validation, ROC-AUC optimization, precision-recall analysis
-- **Feature Engineering**: Text analysis, categorical encoding, correlation analysis
+- **End-to-End Workflows**: Data cleaning → EDA → Modeling → Ethics → Deployment  
+- **Advanced Modeling**: Random Forest, XGBoost, Logistic Regression with hyperparameter tuning  
+- **Statistical Rigor**: Cross-validation, ROC-AUC optimization, precision-recall analysis  
+- **Feature Engineering**: Text analysis, categorical encoding, correlation analysis  
 
 ### **Business Intelligence Skills**
-- **Stakeholder Communication**: Executive summaries with embedded visualizations
-- **Actionable Insights**: Business recommendations with measurable impact
-- **Risk Assessment**: Model interpretability and ethical deployment considerations
-- **Cost-Benefit Analysis**: ROI calculations and business case development
+- **Stakeholder Communication**: Executive summaries with embedded visualizations  
+- **Actionable Insights**: Business recommendations with measurable impact  
+- **Risk Assessment**: Model interpretability and ethical deployment considerations  
+- **Cost-Benefit Analysis**: ROI calculations and business case development  
 
 ### **Professional Development Practices**
-- **Version Control**: Git workflows with proper commit attribution
-- **Reproducibility**: Virtual environments, requirements management, automated pipelines
-- **Documentation**: Professional README files, data dictionaries, methodology notes
-- **Accessibility**: Colorblind-friendly visualizations, inclusive design principles
+- **Version Control**: Git workflows with proper commit attribution  
+- **Reproducibility**: Virtual environments, requirements management, automated pipelines  
+- **Documentation**: Professional README files, data dictionaries, methodology notes  
+- **Accessibility**: Colorblind-friendly visualizations, inclusive design principles  
 
 ---
 
@@ -208,13 +208,13 @@ jn  # Interactive case study selection
 
 ## 📞 **Contact & Collaboration**
 
-**Katherine Ygbuhay**
-📧 Professional inquiries welcome
-💼 Open to data science and business intelligence opportunities
-🔗 [GitHub Portfolio](https://github.com/kygbuhay/portfolio) • [Case Study Examples](coursework/)
+**Katherine Ygbuhay**  
+📧 Professional inquiries welcome  
+💼 Open to data science and business intelligence opportunities  
+🔗 [GitHub Portfolio](https://github.com/kygbuhay/portfolio) • [Case Study Examples](coursework/)  
 
 ---
 
-**Portfolio Infrastructure:** Production-ready automation with global command access
-**Last Updated:** October 2025
-**Status:** Active development with continuous improvement
+**Portfolio Infrastructure:** Production-ready automation with global command access  
+**Last Updated:** October 2025  
+**Status:** Active development with continuous improvement  
