@@ -50,11 +50,11 @@ Tech executives are investing heavily in AI-assisted developer tools but lack qu
 ## 5. Deliverables
 | Deliverable | Purpose |
 |--------------|----------|
-| `/sql/baseline_views.sql` | Creates harmonized tables + KPI views in BigQuery |
-| Tableau Dashboard v1 | 1-page visualization for adoption, sentiment, comp, experience, top languages |
-| `/docs/data_dictionary.json` | Describes all available columns and metadata |
-| `/docs/methodology.md` | Captures assumptions, scope, and next-phase plan |
-| `/reports/baseline_findings.md` | TLDR summary of baseline insights |
+| SQL Analysis Pipeline | Complete data preparation, analysis, and ROI framework scripts |
+| Tableau Dashboard v2 | Interactive visualization for adoption, sentiment, compensation, and experience analysis |
+| `/docs/data_dictionary.md` | Comprehensive data dictionary and column documentation |
+| `/docs/methodology.md` | Complete CRISP-DM methodology and analysis approach |
+| Project README | Comprehensive documentation with live dashboard links |
 
 ---
 

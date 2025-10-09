@@ -29,7 +29,7 @@ Built in **BigQuery + SQL**, visualized in **Tableau**, and designed as a **seni
 
 ## 📊 Dashboard Preview
 
-![AI Productivity Dashboard](dashboards/screenshots/ai_productivity_dashboard_v1.png)
+![AI Productivity Dashboard](dashboards/v2/AI%20at%20Work_%20How%20Developers%20Use,%20Feel%20About,%20and%20Profit%20from%20AI.png)
 
 **Key Insights:**
 - 📈 AI adoption grew from 43.78% → 57.55% (2023-2024)
@@ -44,10 +44,10 @@ Built in **BigQuery + SQL**, visualized in **Tableau**, and designed as a **seni
 |-------|--------------|--------|
 | 1 – Business Understanding | `docs/methodology.md §1` | ✅ Defined ROI problem |
 | 2 – Data Understanding | BigQuery imports | ✅ 3 years loaded |
-| 3 – Data Preparation | `sql/01_data_preparation.sql` | 🚧 Cleaning in progress |
+| 3 – Data Preparation | `sql/01_data_preparation.sql` | ✅ Complete with BigQuery schemas |
 | 4 – Modeling / Analysis | `sql/03_productivity_analysis.sql` | ✅ Complete |
 | 5 – Evaluation / Visualization | Tableau dashboard | ✅ Published |
-| 6 – Deployment | README + Blog | 🚧 Finalizing |
+| 6 – Deployment | README + Documentation | ✅ Complete baseline version |
 
 ---
 
@@ -67,7 +67,7 @@ ai-productivity-roi-analysis/
 ├── docs/
 │   ├── methodology.md
 │   ├── data_dictionary.md
-│   └── findings_summary.pdf
+│   └── data_dictionary.md
 ├── sql/
 │   ├── 01_data_preparation.sql
 │   ├── 02_feature_engineering.sql
@@ -75,8 +75,9 @@ ai-productivity-roi-analysis/
 │   ├── 04_roi_framework.sql
 │   └── 05_bigqueryml_model.sql
 ├── dashboards/
-│   ├── executive_summary.twb
-│   └── screenshots/
+│   ├── v1/
+│   ├── v2/
+│   └── tableau_fixes_log.md
 ├── data/
 │   ├── raw/
 │   └── processed/
@@ -111,4 +112,4 @@ ai-productivity-roi-analysis/
 
 ---
 
-> _This repository forms the foundation for enhancement passes focused on scale (1M+ rows), predictive modeling, and communication polish._
+> **Baseline Complete:** This project demonstrates end-to-end analytics workflow with 200K+ records. Ready for enhancement with larger datasets and advanced modeling.

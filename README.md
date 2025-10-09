@@ -48,14 +48,14 @@ This repository showcases **enterprise-grade data science workflows** through co
 
 ---
 
-### 📞 **Call Center Customer Satisfaction**
+### 📞 **Call Center Customer Satisfaction** *(Planned)*
 *BI dashboard analysis identifying factors driving customer satisfaction and first-call resolution*
 
-**Business Impact:** Actionable insights for reducing churn and improving service quality  
-**Technical Achievement:** Interactive dashboards with drill-down capabilities  
-**Key Focus:** Operational analytics and customer experience optimization  
+**Planned Impact:** Actionable insights for reducing churn and improving service quality
+**Planned Achievement:** Interactive dashboards with drill-down capabilities
+**Focus Area:** Operational analytics and customer experience optimization
 
-[**Explore Case Study →**](coursework/google-business-intelligence/call_center_customer_satisfaction/)
+[**View Project Plan →**](coursework/google-business-intelligence/call_center_customer_satisfaction/)
 
 ---
 
@@ -121,7 +121,7 @@ portfolio/
 │   │   ├── employee_attrition_analysis/     # 🏆 Featured: HR Analytics
 │   │   └── content_moderation_claims_classification/  # 📱 Featured: ML Classification
 │   ├── google-business-intelligence/
-│   │   └── call_center_customer_satisfaction/         # 📞 Featured: BI Dashboard
+│   │   └── call_center_customer_satisfaction/         # 📞 Planned: BI Dashboard
 │   └── google-data-analytics/
 │       └── ai_workplace_productivity_analysis/        # 🤖 Featured: Productivity Analysis
 │
