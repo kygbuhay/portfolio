@@ -38,6 +38,11 @@ __MACOSX/
 **/data/raw/**/*.tgz
 **/data/raw/**/*.7z
 
+# Large processed datasets (>100MB GitHub limit)
+**/data/processed/**/*.csv
+**/data/processed/**/combined_*.csv
+**/data/processed/**/stackoverflow_*.csv
+
 # Reports & Figures (include all image files, exclude temp/cache)
 **/reports/figures/**/.DS_Store
 **/reports/figures/**/Thumbs.db
@@ -69,6 +74,7 @@ STANDARDIZATION_REPORT.md
 **/NOTEBOOK_UPDATES*.md
 **/CHANGES_SUMMARY.md
 **/STANDARDIZATION_REPORT.md
+planning/
 
 # Claude session documentation (keep out of main repo)
 *claude_session*.md

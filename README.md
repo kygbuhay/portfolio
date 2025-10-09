@@ -112,6 +112,8 @@ pfs            # Show portfolio status and commands
 
 ## 📂 **Repository Architecture**
 
+*📁 [**Complete Folder Organization Guide →**](FOLDER_STRUCTURE.md) - Understanding src/ vs scripts/ and when to use each*
+
 ```
 portfolio/
 ├── coursework/                  # Professional case studies

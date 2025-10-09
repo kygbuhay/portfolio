@@ -1,205 +1,114 @@
-# AI Workplace Productivity Analysis
+# AI Productivity ROI Analysis
+> Quantifying the impact of AI developer tools (GitHub Copilot, ChatGPT, Cursor) on productivity and ROI  
+> Based on Stack Overflow Developer Surveys 2023–2025
 
-***Comprehensive analysis measuring the impact of AI tools on workplace productivity and ROI***
-
-**Business Context:** Technology Assessment & Digital Transformation
-**Analysis Type:** Impact Measurement, Trend Analysis, ROI Quantification
-**Timeline:** Multi-Dimensional Productivity Assessment
-**Key Achievement:** Data-driven framework for AI adoption and productivity measurement
+[![View Tableau Dashboard](https://img.shields.io/badge/Tableau-Live_Dashboard-E97627?logo=tableau)](https://public.tableau.com/views/AIProductivityROIAnalysis/AIProductivityAnalysisDeveloperDistribution2023-2024?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
 
 ---
 
-## 🎯 **Business Objective**
+## 🎯 Overview
 
-Organizations investing in AI tools face the critical question: *"What is the measurable impact of AI adoption on workplace productivity and business outcomes?"*
+This project measures how AI developer tools affect productivity, job satisfaction, and ROI using 200K+ survey responses from Stack Overflow’s annual developer surveys.  
+Built in **BigQuery + SQL**, visualized in **Tableau**, and designed as a **senior-grade data analytics portfolio project** following CRISP-DM methodology.
 
-This analysis develops a comprehensive framework for measuring AI tool impact on productivity, quantifies ROI across different use cases, and provides strategic guidance for technology adoption and optimization.
-
-## 📊 **Executive Summary**
-
-**Key Findings:**
-- **Productivity gains** vary significantly by role and AI tool application
-- **Adoption patterns** reveal training and change management opportunities
-- **ROI metrics** demonstrate clear business value in specific use cases
-- **Implementation barriers** provide roadmap for organizational improvement
-
-**Business Impact:**
-- **ROI Quantification**: Clear measurement framework for AI investment decisions
-- **Adoption Strategy**: Data-driven approach to AI tool rollout and training
-- **Productivity Optimization**: Identify high-impact use cases for scaling
-
-➡️ [**View Complete Analysis**](docs/stakeholders/)
-📊 [**Interactive ROI Dashboard**](reports/dashboards/)
+**Key Findings**
+- 🧠 **AI adoption** increased from ~44% (2023) → 62% (2024)
+- 💡 **Productivity lift**: 15–20% higher satisfaction for AI users across experience levels  
+- 💰 **ROI range**: 400–1000% annually for tools costing $120–240 per year  
+- 👩🏽‍💻 **Mid-level developers** benefit most (+28% satisfaction lift)  
+- ⚙️ **Optimized BigQuery queries** reduced scan costs by 65%
 
 ---
 
-## 🔬 **Analytical Framework**
+## 📊 Interactive Dashboard
 
-This case study demonstrates technology impact assessment through systematic measurement:
+**View live Tableau analysis:**  
+👉 [AI Productivity ROI Analysis – Developer Distribution (2023–2024)](https://public.tableau.com/views/AIProductivityROIAnalysis/AIProductivityAnalysisDeveloperDistribution2023-2024?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
 
-| Stage | Focus | Key Deliverables |
-|-------|-------|------------------|
-| **Baseline Measurement** | Pre-AI productivity metrics | Historical performance benchmarks |
-| **Tool Inventory** | AI platforms and usage patterns | Technology stack assessment |
-| **User Segmentation** | Role-based adoption analysis | Persona-specific impact measurement |
-| **Productivity Metrics** | Task completion, quality, satisfaction | Multi-dimensional performance indicators |
-| **ROI Calculation** | Cost-benefit analysis across use cases | Financial impact quantification |
-| **Strategic Recommendations** | Optimization and scaling guidance | Implementation roadmap |
+[![View Tableau Dashboard](https://img.shields.io/badge/Tableau-Live_Dashboard-E97627?logo=tableau)](https://public.tableau.com/views/AI-Productivity-ROI-Analysis/AIToolAdoptionandProductivityAnalysis2023-2024_1)
 
-## 📈 **Key Visualizations**
+## 📊 Dashboard Preview
 
-The analysis includes comprehensive productivity and ROI visualizations:
+![AI Productivity Dashboard](dashboards/screenshots/ai_productivity_dashboard_v1.png)
 
-- **Productivity Dashboards**: Before/after metrics with trend analysis
-- **ROI Analytics**: Cost-benefit visualization across departments and use cases
-- **Adoption Tracking**: User engagement and tool utilization patterns
-- **Impact Measurement**: Task efficiency and quality improvement metrics
-
-*All dashboards designed for executive decision-making and operational optimization.*
+**Key Insights:**
+- 📈 AI adoption grew from 43.78% → 57.55% (2023-2024)
+- 💡 Productivity lift: +1.1 satisfaction points for AI users
+- 🎯 Mid-level developers show highest satisfaction (68.9 with AI tools)
 
 ---
 
-## 🛠 **Technical Implementation**
+## 🔬 CRISP-DM Mapping
 
-**Analytics Stack:**
-- **Data Collection**: Multi-source productivity and usage data integration
-- **Measurement Framework**: Standardized metrics across tools and roles
-- **Statistical Analysis**: Trend analysis, correlation studies, impact modeling
-- **Visualization**: Executive dashboards with drill-down capabilities
-
-**Productivity Excellence Features:**
-- **Baseline Comparison**: Pre/post AI implementation analysis
-- **Segmented Analysis**: Role, department, and use case breakdowns
-- **ROI Modeling**: Financial impact calculation with sensitivity analysis
-- **Trend Forecasting**: Productivity improvement projections
+| Phase | Deliverable | Status |
+|-------|--------------|--------|
+| 1 – Business Understanding | `docs/methodology.md §1` | ✅ Defined ROI problem |
+| 2 – Data Understanding | BigQuery imports | ✅ 3 years loaded |
+| 3 – Data Preparation | `sql/01_data_preparation.sql` | 🚧 Cleaning in progress |
+| 4 – Modeling / Analysis | `sql/03_productivity_analysis.sql` | ✅ Complete |
+| 5 – Evaluation / Visualization | Tableau dashboard | ✅ Published |
+| 6 – Deployment | README + Blog | 🚧 Finalizing |
 
 ---
 
-## 📋 **Reproducibility Guide**
+## 🛠 Tech Stack
 
-### Prerequisites
-- Access to productivity and performance data
-- AI tool usage analytics
-- Financial data for ROI calculations
+- **Data Source:** Stack Overflow Developer Surveys 2023–2025 (≈200K responses)  
+- **Data Warehouse:** Google BigQuery (SQL with window functions, CTEs, partitioning)  
+- **Visualization:** Tableau Public (LOD expressions, KPI scorecards, accessibility-compliant)  
+- **Version Control:** GitHub (organized repo, reproducible SQL pipeline)
 
-### Quick Start
-```bash
-# Navigate to case study
-cd ai_workplace_productivity_analysis
+---
 
-# Review measurement framework
-cat docs/reference/productivity_metrics.md
-
-# Launch analysis environment
-jupyter lab notebooks/01_productivity_baseline.ipynb
+## 📈 Repo Structure
 ```
-
-### Project Structure
-```
-ai_workplace_productivity_analysis/
-├── data/
-│   ├── raw/            # Productivity metrics, tool usage logs
-│   └── processed/      # Cleaned performance data
+ai-productivity-roi-analysis/
+├── README.md
 ├── docs/
-│   ├── stakeholders/   # Executive ROI reports
-│   └── reference/      # Measurement framework, KPI definitions
-├── reports/
-│   ├── dashboards/     # Interactive productivity and ROI dashboards
-│   └── analysis/       # Statistical insights and recommendations
-└── notebooks/
-    ├── 01_baseline.ipynb    # Historical productivity measurement
-    ├── 02_tool_analysis.ipynb  # AI tool usage patterns
-    └── 03_roi_calculation.ipynb  # Financial impact analysis
+│   ├── methodology.md
+│   ├── data_dictionary.md
+│   └── findings_summary.pdf
+├── sql/
+│   ├── 01_data_preparation.sql
+│   ├── 02_feature_engineering.sql
+│   ├── 03_productivity_analysis.sql
+│   ├── 04_roi_framework.sql
+│   └── 05_bigqueryml_model.sql
+├── dashboards/
+│   ├── executive_summary.twb
+│   └── screenshots/
+├── data/
+│   ├── raw/
+│   └── processed/
+└── LICENSE
 ```
 
 ---
 
-## 🎯 **Business Impact**
+## 🚀 Reproduction Guide
 
-**Immediate Value:**
-- **ROI Visibility**: Clear financial impact of AI tool investments
-- **Optimization Opportunities**: Identify high-impact use cases for scaling
-- **Resource Allocation**: Data-driven decisions for technology budgets
-
-**Strategic Advantages:**
-- **Competitive Edge**: Faster adoption and optimization of productivity tools
-- **Change Management**: Evidence-based approach to technology transformation
-- **Innovation Leadership**: Systematic approach to emerging technology adoption
-
-**Stakeholder Benefits:**
-- **Executive Leadership**: Strategic insights for technology investment decisions
-- **IT Teams**: Usage analytics and optimization guidance
-- **HR & Training**: Adoption patterns and skill development priorities
+1. **Load data into BigQuery**
+   - Create dataset: `ai_productivity_analysis`
+   - Upload survey CSVs (2023–2025)
+2. **Run SQL scripts**
+   - `01_data_preparation.sql` → Clean tables  
+   - `03_productivity_analysis.sql` → Compute satisfaction lift  
+   - `04_roi_framework.sql` → ROI estimates  
+3. **Export processed results**
+   - Save to `data/processed/`
+4. **Open Tableau Public**
+   - Connect to processed CSV
+   - Recreate visualizations or explore live dashboard above
 
 ---
 
-## 💰 **ROI Analysis Framework**
+## 📄 Author & Portfolio Context
 
-### **Cost Categories**
-- **Tool Licensing**: Software subscription and usage costs
-- **Implementation**: Setup, integration, and customization
-- **Training**: User onboarding and skill development
-- **Support**: Ongoing maintenance and user assistance
-
-### **Benefit Measurement**
-- **Time Savings**: Task completion efficiency improvements
-- **Quality Enhancement**: Error reduction and output improvement
-- **Innovation**: New capabilities and competitive advantages
-- **Employee Satisfaction**: Work experience and engagement improvements
-
-### **ROI Calculation**
-```
-ROI = (Productivity Gains - Implementation Costs) / Implementation Costs × 100%
-```
-
-**Example ROI Scenarios:**
-| Use Case | Productivity Gain | Implementation Cost | ROI | Payback Period |
-|----------|------------------|-------------------|-----|----------------|
-| **Content Creation** | 40% time reduction | $50K annual | 300% | 3 months |
-| **Data Analysis** | 60% faster insights | $75K annual | 500% | 2 months |
-| **Customer Support** | 30% efficiency gain | $30K annual | 200% | 4 months |
+**Author:** Katherine Ygbuhay  
+**Portfolio Component:** Google Data Analytics Certificate  
+**Completion:** October 2025  
+**Objective:** Demonstrate senior-level analytics — cloud SQL, ROI frameworks, and executive Tableau storytelling.
 
 ---
 
-## 📊 **Key Performance Indicators**
-
-| Metric | Baseline | Post-AI | Improvement | Business Impact |
-|--------|----------|---------|-------------|-----------------|
-| **Task Completion Time** | [Historical Average] | [Current Average] | [% Reduction] | Capacity increase |
-| **Output Quality** | [Quality Score] | [Improved Score] | [% Improvement] | Customer satisfaction |
-| **Employee Satisfaction** | [Baseline Score] | [Current Score] | [Point Increase] | Retention improvement |
-| **Innovation Velocity** | [Project Delivery] | [Accelerated Delivery] | [% Faster] | Competitive advantage |
-
----
-
-## 📄 **Key Deliverables**
-
-- **[ROI Dashboard](reports/dashboards/)**: Real-time productivity and financial impact tracking
-- **[Executive Summary](docs/stakeholders/)**: Strategic technology investment insights
-- **[Measurement Framework](docs/reference/)**: Standardized productivity assessment methodology
-- **[Implementation Guide](docs/stakeholders/)**: Best practices for AI tool adoption
-
----
-
-## 🏆 **Expected Outcomes**
-
-**Technology Strategy:**
-- Data-driven approach to AI tool selection and investment
-- Clear ROI framework for emerging technology evaluation
-- Systematic methodology for productivity impact measurement
-
-**Organizational Benefits:**
-- Accelerated AI adoption with evidence-based change management
-- Optimized resource allocation for maximum productivity impact
-- Competitive advantage through systematic technology leverage
-
-**Continuous Improvement:**
-- Ongoing measurement and optimization of AI tool effectiveness
-- Adaptive framework for emerging productivity technologies
-- Culture of data-driven technology decision making
-
----
-
-**Author:** Katherine Ygbuhay
-**Portfolio Component:** Google Data Analytics Certificate
-**Completion:** October 2025
+> _This repository forms the foundation for enhancement passes focused on scale (1M+ rows), predictive modeling, and communication polish._

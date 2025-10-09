@@ -1,0 +1,524 @@
+[
+  {
+    "name": "ResponseId",
+    "type": "INTEGER",
+    "mode": "NULLABLE",
+    "description": "Response ID: ResponseId"
+  },
+  {
+    "name": "Q120",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "String column: Q120"
+  },
+  {
+    "name": "MainBranch",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "String column: MainBranch"
+  },
+  {
+    "name": "Age",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "String column: Age"
+  },
+  {
+    "name": "Employment",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "String column: Employment"
+  },
+  {
+    "name": "RemoteWork",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "String column: RemoteWork"
+  },
+  {
+    "name": "CodingActivities",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "String column: CodingActivities"
+  },
+  {
+    "name": "EdLevel",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "String column: EdLevel"
+  },
+  {
+    "name": "LearnCode",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "String column: LearnCode"
+  },
+  {
+    "name": "LearnCodeOnline",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "String column: LearnCodeOnline"
+  },
+  {
+    "name": "LearnCodeCoursesCert",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "String column: LearnCodeCoursesCert"
+  },
+  {
+    "name": "YearsCode",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "String column: YearsCode"
+  },
+  {
+    "name": "YearsCodePro",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "String column: YearsCodePro"
+  },
+  {
+    "name": "DevType",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "String column: DevType"
+  },
+  {
+    "name": "OrgSize",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "String column: OrgSize"
+  },
+  {
+    "name": "PurchaseInfluence",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "String column: PurchaseInfluence"
+  },
+  {
+    "name": "TechList",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "String column: TechList"
+  },
+  {
+    "name": "BuyNewTool",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "String column: BuyNewTool"
+  },
+  {
+    "name": "Country",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "String column: Country"
+  },
+  {
+    "name": "Currency",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "String column: Currency"
+  },
+  {
+    "name": "CompTotal",
+    "type": "FLOAT",
+    "mode": "NULLABLE",
+    "description": "Salary field: CompTotal (cleaned, outliers >1e9 removed)"
+  },
+  {
+    "name": "LanguageHaveWorkedWith",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "String column: LanguageHaveWorkedWith"
+  },
+  {
+    "name": "LanguageWantToWorkWith",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "String column: LanguageWantToWorkWith"
+  },
+  {
+    "name": "DatabaseHaveWorkedWith",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "String column: DatabaseHaveWorkedWith"
+  },
+  {
+    "name": "DatabaseWantToWorkWith",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "String column: DatabaseWantToWorkWith"
+  },
+  {
+    "name": "PlatformHaveWorkedWith",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "String column: PlatformHaveWorkedWith"
+  },
+  {
+    "name": "PlatformWantToWorkWith",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "String column: PlatformWantToWorkWith"
+  },
+  {
+    "name": "WebframeHaveWorkedWith",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "String column: WebframeHaveWorkedWith"
+  },
+  {
+    "name": "WebframeWantToWorkWith",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "String column: WebframeWantToWorkWith"
+  },
+  {
+    "name": "MiscTechHaveWorkedWith",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "String column: MiscTechHaveWorkedWith"
+  },
+  {
+    "name": "MiscTechWantToWorkWith",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "String column: MiscTechWantToWorkWith"
+  },
+  {
+    "name": "ToolsTechHaveWorkedWith",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "String column: ToolsTechHaveWorkedWith"
+  },
+  {
+    "name": "ToolsTechWantToWorkWith",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "String column: ToolsTechWantToWorkWith"
+  },
+  {
+    "name": "NEWCollabToolsHaveWorkedWith",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "String column: NEWCollabToolsHaveWorkedWith"
+  },
+  {
+    "name": "NEWCollabToolsWantToWorkWith",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "String column: NEWCollabToolsWantToWorkWith"
+  },
+  {
+    "name": "OpSysPersonal_use",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "String column: OpSysPersonal_use (originally: OpSysPersonal use)"
+  },
+  {
+    "name": "OpSysProfessional_use",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "String column: OpSysProfessional_use (originally: OpSysProfessional use)"
+  },
+  {
+    "name": "OfficeStackAsyncHaveWorkedWith",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "String column: OfficeStackAsyncHaveWorkedWith"
+  },
+  {
+    "name": "OfficeStackAsyncWantToWorkWith",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "String column: OfficeStackAsyncWantToWorkWith"
+  },
+  {
+    "name": "OfficeStackSyncHaveWorkedWith",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "String column: OfficeStackSyncHaveWorkedWith"
+  },
+  {
+    "name": "OfficeStackSyncWantToWorkWith",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "String column: OfficeStackSyncWantToWorkWith"
+  },
+  {
+    "name": "AISearchHaveWorkedWith",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "String column: AISearchHaveWorkedWith"
+  },
+  {
+    "name": "AISearchWantToWorkWith",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "String column: AISearchWantToWorkWith"
+  },
+  {
+    "name": "AIDevHaveWorkedWith",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "String column: AIDevHaveWorkedWith"
+  },
+  {
+    "name": "AIDevWantToWorkWith",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "String column: AIDevWantToWorkWith"
+  },
+  {
+    "name": "NEWSOSites",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "String column: NEWSOSites"
+  },
+  {
+    "name": "SOVisitFreq",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "String column: SOVisitFreq"
+  },
+  {
+    "name": "SOAccount",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "String column: SOAccount"
+  },
+  {
+    "name": "SOPartFreq",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "String column: SOPartFreq"
+  },
+  {
+    "name": "SOComm",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "String column: SOComm"
+  },
+  {
+    "name": "SOAI",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "String column: SOAI"
+  },
+  {
+    "name": "AISelect",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "String column: AISelect"
+  },
+  {
+    "name": "AISent",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "String column: AISent"
+  },
+  {
+    "name": "AIAcc",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "String column: AIAcc"
+  },
+  {
+    "name": "AIBen",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "String column: AIBen"
+  },
+  {
+    "name": "AIToolInterested_in_Using",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "String column: AIToolInterested_in_Using (originally: AIToolInterested in Using)"
+  },
+  {
+    "name": "AIToolCurrently_Using",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "String column: AIToolCurrently_Using (originally: AIToolCurrently Using)"
+  },
+  {
+    "name": "AIToolNot_interested_in_Using",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "String column: AIToolNot_interested_in_Using (originally: AIToolNot interested in Using)"
+  },
+  {
+    "name": "AINextVery_different",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "String column: AINextVery_different (originally: AINextVery different)"
+  },
+  {
+    "name": "AINextNeither_different_nor_similar",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "String column: AINextNeither_different_nor_similar (originally: AINextNeither different nor similar)"
+  },
+  {
+    "name": "AINextSomewhat_similar",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "String column: AINextSomewhat_similar (originally: AINextSomewhat similar)"
+  },
+  {
+    "name": "AINextVery_similar",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "String column: AINextVery_similar (originally: AINextVery similar)"
+  },
+  {
+    "name": "AINextSomewhat_different",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "String column: AINextSomewhat_different (originally: AINextSomewhat different)"
+  },
+  {
+    "name": "TBranch",
+    "type": "BOOLEAN",
+    "mode": "NULLABLE",
+    "description": "Boolean column: TBranch"
+  },
+  {
+    "name": "ICorPM",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "String column: ICorPM"
+  },
+  {
+    "name": "WorkExp",
+    "type": "INTEGER",
+    "mode": "NULLABLE",
+    "description": "Integer column: WorkExp"
+  },
+  {
+    "name": "Knowledge_1",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "String column: Knowledge_1"
+  },
+  {
+    "name": "Knowledge_2",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "String column: Knowledge_2"
+  },
+  {
+    "name": "Knowledge_3",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "String column: Knowledge_3"
+  },
+  {
+    "name": "Knowledge_4",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "String column: Knowledge_4"
+  },
+  {
+    "name": "Knowledge_5",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "String column: Knowledge_5"
+  },
+  {
+    "name": "Knowledge_6",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "String column: Knowledge_6"
+  },
+  {
+    "name": "Knowledge_7",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "String column: Knowledge_7"
+  },
+  {
+    "name": "Knowledge_8",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "String column: Knowledge_8"
+  },
+  {
+    "name": "Frequency_1",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "String column: Frequency_1"
+  },
+  {
+    "name": "Frequency_2",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "String column: Frequency_2"
+  },
+  {
+    "name": "Frequency_3",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "String column: Frequency_3"
+  },
+  {
+    "name": "TimeSearching",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "String column: TimeSearching"
+  },
+  {
+    "name": "TimeAnswering",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "String column: TimeAnswering"
+  },
+  {
+    "name": "ProfessionalTech",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "String column: ProfessionalTech"
+  },
+  {
+    "name": "Industry",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "String column: Industry"
+  },
+  {
+    "name": "SurveyLength",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "String column: SurveyLength"
+  },
+  {
+    "name": "SurveyEase",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "String column: SurveyEase"
+  },
+  {
+    "name": "ConvertedCompYearly",
+    "type": "FLOAT",
+    "mode": "NULLABLE",
+    "description": "Salary field: ConvertedCompYearly (cleaned, outliers >1e9 removed)"
+  },
+  {
+    "name": "survey_year",
+    "type": "INTEGER",
+    "mode": "NULLABLE",
+    "description": "Integer column: survey_year"
+  },
+  {
+    "name": "processing_timestamp",
+    "type": "TIMESTAMP",
+    "mode": "NULLABLE",
+    "description": "Timestamp column: processing_timestamp"
+  },
+  {
+    "name": "source_encoding",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "String column: source_encoding"
+  }
+]

@@ -1,0 +1,1051 @@
+{
+  "schema": {
+    "fields": [
+      {
+        "name": "ResponseId",
+        "type": "INTEGER",
+        "mode": "NULLABLE",
+        "description": "Response ID: ResponseId"
+      },
+      {
+        "name": "MainBranch",
+        "type": "STRING",
+        "mode": "NULLABLE",
+        "description": "String column: MainBranch"
+      },
+      {
+        "name": "Age",
+        "type": "STRING",
+        "mode": "NULLABLE",
+        "description": "String column: Age"
+      },
+      {
+        "name": "EdLevel",
+        "type": "STRING",
+        "mode": "NULLABLE",
+        "description": "String column: EdLevel"
+      },
+      {
+        "name": "Employment",
+        "type": "STRING",
+        "mode": "NULLABLE",
+        "description": "String column: Employment"
+      },
+      {
+        "name": "EmploymentAddl",
+        "type": "STRING",
+        "mode": "NULLABLE",
+        "description": "String column: EmploymentAddl"
+      },
+      {
+        "name": "WorkExp",
+        "type": "INTEGER",
+        "mode": "NULLABLE",
+        "description": "Integer column: WorkExp"
+      },
+      {
+        "name": "LearnCodeChoose",
+        "type": "STRING",
+        "mode": "NULLABLE",
+        "description": "String column: LearnCodeChoose"
+      },
+      {
+        "name": "LearnCode",
+        "type": "STRING",
+        "mode": "NULLABLE",
+        "description": "String column: LearnCode"
+      },
+      {
+        "name": "LearnCodeAI",
+        "type": "STRING",
+        "mode": "NULLABLE",
+        "description": "String column: LearnCodeAI"
+      },
+      {
+        "name": "AILearnHow",
+        "type": "STRING",
+        "mode": "NULLABLE",
+        "description": "String column: AILearnHow"
+      },
+      {
+        "name": "YearsCode",
+        "type": "INTEGER",
+        "mode": "NULLABLE",
+        "description": "Integer column: YearsCode"
+      },
+      {
+        "name": "DevType",
+        "type": "STRING",
+        "mode": "NULLABLE",
+        "description": "String column: DevType"
+      },
+      {
+        "name": "OrgSize",
+        "type": "STRING",
+        "mode": "NULLABLE",
+        "description": "String column: OrgSize"
+      },
+      {
+        "name": "ICorPM",
+        "type": "STRING",
+        "mode": "NULLABLE",
+        "description": "String column: ICorPM"
+      },
+      {
+        "name": "RemoteWork",
+        "type": "STRING",
+        "mode": "NULLABLE",
+        "description": "String column: RemoteWork"
+      },
+      {
+        "name": "PurchaseInfluence",
+        "type": "STRING",
+        "mode": "NULLABLE",
+        "description": "String column: PurchaseInfluence"
+      },
+      {
+        "name": "TechEndorseIntro",
+        "type": "STRING",
+        "mode": "NULLABLE",
+        "description": "String column: TechEndorseIntro"
+      },
+      {
+        "name": "TechEndorse_1",
+        "type": "INTEGER",
+        "mode": "NULLABLE",
+        "description": "Integer column: TechEndorse_1"
+      },
+      {
+        "name": "TechEndorse_2",
+        "type": "INTEGER",
+        "mode": "NULLABLE",
+        "description": "Integer column: TechEndorse_2"
+      },
+      {
+        "name": "TechEndorse_3",
+        "type": "INTEGER",
+        "mode": "NULLABLE",
+        "description": "Integer column: TechEndorse_3"
+      },
+      {
+        "name": "TechEndorse_4",
+        "type": "INTEGER",
+        "mode": "NULLABLE",
+        "description": "Integer column: TechEndorse_4"
+      },
+      {
+        "name": "TechEndorse_5",
+        "type": "INTEGER",
+        "mode": "NULLABLE",
+        "description": "Integer column: TechEndorse_5"
+      },
+      {
+        "name": "TechEndorse_6",
+        "type": "INTEGER",
+        "mode": "NULLABLE",
+        "description": "Integer column: TechEndorse_6"
+      },
+      {
+        "name": "TechEndorse_7",
+        "type": "INTEGER",
+        "mode": "NULLABLE",
+        "description": "Integer column: TechEndorse_7"
+      },
+      {
+        "name": "TechEndorse_8",
+        "type": "INTEGER",
+        "mode": "NULLABLE",
+        "description": "Integer column: TechEndorse_8"
+      },
+      {
+        "name": "TechEndorse_9",
+        "type": "INTEGER",
+        "mode": "NULLABLE",
+        "description": "Integer column: TechEndorse_9"
+      },
+      {
+        "name": "TechEndorse_13",
+        "type": "INTEGER",
+        "mode": "NULLABLE",
+        "description": "Integer column: TechEndorse_13"
+      },
+      {
+        "name": "TechEndorse_13_TEXT",
+        "type": "STRING",
+        "mode": "NULLABLE",
+        "description": "String column: TechEndorse_13_TEXT"
+      },
+      {
+        "name": "TechOppose_1",
+        "type": "INTEGER",
+        "mode": "NULLABLE",
+        "description": "Integer column: TechOppose_1"
+      },
+      {
+        "name": "TechOppose_2",
+        "type": "INTEGER",
+        "mode": "NULLABLE",
+        "description": "Integer column: TechOppose_2"
+      },
+      {
+        "name": "TechOppose_3",
+        "type": "INTEGER",
+        "mode": "NULLABLE",
+        "description": "Integer column: TechOppose_3"
+      },
+      {
+        "name": "TechOppose_5",
+        "type": "INTEGER",
+        "mode": "NULLABLE",
+        "description": "Integer column: TechOppose_5"
+      },
+      {
+        "name": "TechOppose_7",
+        "type": "INTEGER",
+        "mode": "NULLABLE",
+        "description": "Integer column: TechOppose_7"
+      },
+      {
+        "name": "TechOppose_9",
+        "type": "INTEGER",
+        "mode": "NULLABLE",
+        "description": "Integer column: TechOppose_9"
+      },
+      {
+        "name": "TechOppose_11",
+        "type": "INTEGER",
+        "mode": "NULLABLE",
+        "description": "Integer column: TechOppose_11"
+      },
+      {
+        "name": "TechOppose_13",
+        "type": "INTEGER",
+        "mode": "NULLABLE",
+        "description": "Integer column: TechOppose_13"
+      },
+      {
+        "name": "TechOppose_16",
+        "type": "INTEGER",
+        "mode": "NULLABLE",
+        "description": "Integer column: TechOppose_16"
+      },
+      {
+        "name": "TechOppose_15",
+        "type": "INTEGER",
+        "mode": "NULLABLE",
+        "description": "Integer column: TechOppose_15"
+      },
+      {
+        "name": "TechOppose_15_TEXT",
+        "type": "STRING",
+        "mode": "NULLABLE",
+        "description": "String column: TechOppose_15_TEXT"
+      },
+      {
+        "name": "Industry",
+        "type": "STRING",
+        "mode": "NULLABLE",
+        "description": "String column: Industry"
+      },
+      {
+        "name": "JobSatPoints_1",
+        "type": "INTEGER",
+        "mode": "NULLABLE",
+        "description": "Integer column: JobSatPoints_1"
+      },
+      {
+        "name": "JobSatPoints_4",
+        "type": "INTEGER",
+        "mode": "NULLABLE",
+        "description": "Integer column: JobSatPoints_4"
+      },
+      {
+        "name": "JobSatPoints_5",
+        "type": "INTEGER",
+        "mode": "NULLABLE",
+        "description": "Integer column: JobSatPoints_5"
+      },
+      {
+        "name": "JobSatPoints_6",
+        "type": "INTEGER",
+        "mode": "NULLABLE",
+        "description": "Integer column: JobSatPoints_6"
+      },
+      {
+        "name": "JobSatPoints_7",
+        "type": "INTEGER",
+        "mode": "NULLABLE",
+        "description": "Integer column: JobSatPoints_7"
+      },
+      {
+        "name": "JobSatPoints_8",
+        "type": "INTEGER",
+        "mode": "NULLABLE",
+        "description": "Integer column: JobSatPoints_8"
+      },
+      {
+        "name": "JobSatPoints_9",
+        "type": "INTEGER",
+        "mode": "NULLABLE",
+        "description": "Integer column: JobSatPoints_9"
+      },
+      {
+        "name": "JobSatPoints_10",
+        "type": "INTEGER",
+        "mode": "NULLABLE",
+        "description": "Integer column: JobSatPoints_10"
+      },
+      {
+        "name": "JobSatPoints_11",
+        "type": "INTEGER",
+        "mode": "NULLABLE",
+        "description": "Integer column: JobSatPoints_11"
+      },
+      {
+        "name": "JobSatPoints_13",
+        "type": "INTEGER",
+        "mode": "NULLABLE",
+        "description": "Integer column: JobSatPoints_13"
+      },
+      {
+        "name": "JobSatPoints_14",
+        "type": "INTEGER",
+        "mode": "NULLABLE",
+        "description": "Integer column: JobSatPoints_14"
+      },
+      {
+        "name": "JobSatPoints_15",
+        "type": "INTEGER",
+        "mode": "NULLABLE",
+        "description": "Integer column: JobSatPoints_15"
+      },
+      {
+        "name": "JobSatPoints_16",
+        "type": "INTEGER",
+        "mode": "NULLABLE",
+        "description": "Integer column: JobSatPoints_16"
+      },
+      {
+        "name": "JobSatPoints_15_TEXT",
+        "type": "STRING",
+        "mode": "NULLABLE",
+        "description": "String column: JobSatPoints_15_TEXT"
+      },
+      {
+        "name": "AIThreat",
+        "type": "STRING",
+        "mode": "NULLABLE",
+        "description": "String column: AIThreat"
+      },
+      {
+        "name": "NewRole",
+        "type": "STRING",
+        "mode": "NULLABLE",
+        "description": "String column: NewRole"
+      },
+      {
+        "name": "ToolCountWork",
+        "type": "INTEGER",
+        "mode": "NULLABLE",
+        "description": "Integer column: ToolCountWork"
+      },
+      {
+        "name": "ToolCountPersonal",
+        "type": "INTEGER",
+        "mode": "NULLABLE",
+        "description": "Integer column: ToolCountPersonal"
+      },
+      {
+        "name": "Country",
+        "type": "STRING",
+        "mode": "NULLABLE",
+        "description": "String column: Country"
+      },
+      {
+        "name": "Currency",
+        "type": "STRING",
+        "mode": "NULLABLE",
+        "description": "String column: Currency"
+      },
+      {
+        "name": "CompTotal",
+        "type": "INTEGER",
+        "mode": "NULLABLE",
+        "description": "Salary field: CompTotal (cleaned, outliers >1e9 removed)"
+      },
+      {
+        "name": "LanguageChoice",
+        "type": "BOOLEAN",
+        "mode": "NULLABLE",
+        "description": "Boolean column: LanguageChoice"
+      },
+      {
+        "name": "LanguageHaveWorkedWith",
+        "type": "STRING",
+        "mode": "NULLABLE",
+        "description": "String column: LanguageHaveWorkedWith"
+      },
+      {
+        "name": "LanguageWantToWorkWith",
+        "type": "STRING",
+        "mode": "NULLABLE",
+        "description": "String column: LanguageWantToWorkWith"
+      },
+      {
+        "name": "LanguageAdmired",
+        "type": "STRING",
+        "mode": "NULLABLE",
+        "description": "String column: LanguageAdmired"
+      },
+      {
+        "name": "LanguagesHaveEntry",
+        "type": "STRING",
+        "mode": "NULLABLE",
+        "description": "String column: LanguagesHaveEntry"
+      },
+      {
+        "name": "LanguagesWantEntry",
+        "type": "STRING",
+        "mode": "NULLABLE",
+        "description": "String column: LanguagesWantEntry"
+      },
+      {
+        "name": "DatabaseChoice",
+        "type": "BOOLEAN",
+        "mode": "NULLABLE",
+        "description": "Boolean column: DatabaseChoice"
+      },
+      {
+        "name": "DatabaseHaveWorkedWith",
+        "type": "STRING",
+        "mode": "NULLABLE",
+        "description": "String column: DatabaseHaveWorkedWith"
+      },
+      {
+        "name": "DatabaseWantToWorkWith",
+        "type": "STRING",
+        "mode": "NULLABLE",
+        "description": "String column: DatabaseWantToWorkWith"
+      },
+      {
+        "name": "DatabaseAdmired",
+        "type": "STRING",
+        "mode": "NULLABLE",
+        "description": "String column: DatabaseAdmired"
+      },
+      {
+        "name": "DatabaseHaveEntry",
+        "type": "STRING",
+        "mode": "NULLABLE",
+        "description": "String column: DatabaseHaveEntry"
+      },
+      {
+        "name": "DatabaseWantEntry",
+        "type": "STRING",
+        "mode": "NULLABLE",
+        "description": "String column: DatabaseWantEntry"
+      },
+      {
+        "name": "PlatformChoice",
+        "type": "BOOLEAN",
+        "mode": "NULLABLE",
+        "description": "Boolean column: PlatformChoice"
+      },
+      {
+        "name": "PlatformHaveWorkedWith",
+        "type": "STRING",
+        "mode": "NULLABLE",
+        "description": "String column: PlatformHaveWorkedWith"
+      },
+      {
+        "name": "PlatformWantToWorkWith",
+        "type": "STRING",
+        "mode": "NULLABLE",
+        "description": "String column: PlatformWantToWorkWith"
+      },
+      {
+        "name": "PlatformAdmired",
+        "type": "STRING",
+        "mode": "NULLABLE",
+        "description": "String column: PlatformAdmired"
+      },
+      {
+        "name": "PlatformHaveEntry",
+        "type": "STRING",
+        "mode": "NULLABLE",
+        "description": "String column: PlatformHaveEntry"
+      },
+      {
+        "name": "PlatformWantEntry",
+        "type": "STRING",
+        "mode": "NULLABLE",
+        "description": "String column: PlatformWantEntry"
+      },
+      {
+        "name": "WebframeChoice",
+        "type": "BOOLEAN",
+        "mode": "NULLABLE",
+        "description": "Boolean column: WebframeChoice"
+      },
+      {
+        "name": "WebframeHaveWorkedWith",
+        "type": "STRING",
+        "mode": "NULLABLE",
+        "description": "String column: WebframeHaveWorkedWith"
+      },
+      {
+        "name": "WebframeWantToWorkWith",
+        "type": "STRING",
+        "mode": "NULLABLE",
+        "description": "String column: WebframeWantToWorkWith"
+      },
+      {
+        "name": "WebframeAdmired",
+        "type": "STRING",
+        "mode": "NULLABLE",
+        "description": "String column: WebframeAdmired"
+      },
+      {
+        "name": "WebframeHaveEntry",
+        "type": "STRING",
+        "mode": "NULLABLE",
+        "description": "String column: WebframeHaveEntry"
+      },
+      {
+        "name": "WebframeWantEntry",
+        "type": "STRING",
+        "mode": "NULLABLE",
+        "description": "String column: WebframeWantEntry"
+      },
+      {
+        "name": "DevEnvsChoice",
+        "type": "BOOLEAN",
+        "mode": "NULLABLE",
+        "description": "Boolean column: DevEnvsChoice"
+      },
+      {
+        "name": "DevEnvsHaveWorkedWith",
+        "type": "STRING",
+        "mode": "NULLABLE",
+        "description": "String column: DevEnvsHaveWorkedWith"
+      },
+      {
+        "name": "DevEnvsWantToWorkWith",
+        "type": "STRING",
+        "mode": "NULLABLE",
+        "description": "String column: DevEnvsWantToWorkWith"
+      },
+      {
+        "name": "DevEnvsAdmired",
+        "type": "STRING",
+        "mode": "NULLABLE",
+        "description": "String column: DevEnvsAdmired"
+      },
+      {
+        "name": "DevEnvHaveEntry",
+        "type": "STRING",
+        "mode": "NULLABLE",
+        "description": "String column: DevEnvHaveEntry"
+      },
+      {
+        "name": "DevEnvWantEntry",
+        "type": "STRING",
+        "mode": "NULLABLE",
+        "description": "String column: DevEnvWantEntry"
+      },
+      {
+        "name": "SOTagsHaveWorkedWith",
+        "type": "STRING",
+        "mode": "NULLABLE",
+        "description": "String column: SOTagsHaveWorkedWith"
+      },
+      {
+        "name": "SOTagsWantToWorkWith",
+        "type": "STRING",
+        "mode": "NULLABLE",
+        "description": "String column: SOTagsWantToWorkWith"
+      },
+      {
+        "name": "SOTagsAdmired",
+        "type": "STRING",
+        "mode": "NULLABLE",
+        "description": "String column: SOTagsAdmired"
+      },
+      {
+        "name": "SOTagsHaveEntry",
+        "type": "STRING",
+        "mode": "NULLABLE",
+        "description": "String column: SOTagsHaveEntry"
+      },
+      {
+        "name": "SOTagsWant_Entry",
+        "type": "STRING",
+        "mode": "NULLABLE",
+        "description": "String column: SOTagsWant_Entry (originally: SOTagsWant Entry)"
+      },
+      {
+        "name": "OpSysPersonal_use",
+        "type": "STRING",
+        "mode": "NULLABLE",
+        "description": "String column: OpSysPersonal_use (originally: OpSysPersonal use)"
+      },
+      {
+        "name": "OpSysProfessional_use",
+        "type": "STRING",
+        "mode": "NULLABLE",
+        "description": "String column: OpSysProfessional_use (originally: OpSysProfessional use)"
+      },
+      {
+        "name": "OfficeStackAsyncHaveWorkedWith",
+        "type": "STRING",
+        "mode": "NULLABLE",
+        "description": "String column: OfficeStackAsyncHaveWorkedWith"
+      },
+      {
+        "name": "OfficeStackAsyncWantToWorkWith",
+        "type": "STRING",
+        "mode": "NULLABLE",
+        "description": "String column: OfficeStackAsyncWantToWorkWith"
+      },
+      {
+        "name": "OfficeStackAsyncAdmired",
+        "type": "STRING",
+        "mode": "NULLABLE",
+        "description": "String column: OfficeStackAsyncAdmired"
+      },
+      {
+        "name": "OfficeStackHaveEntry",
+        "type": "STRING",
+        "mode": "NULLABLE",
+        "description": "String column: OfficeStackHaveEntry"
+      },
+      {
+        "name": "OfficeStackWantEntry",
+        "type": "STRING",
+        "mode": "NULLABLE",
+        "description": "String column: OfficeStackWantEntry"
+      },
+      {
+        "name": "CommPlatformHaveWorkedWith",
+        "type": "STRING",
+        "mode": "NULLABLE",
+        "description": "String column: CommPlatformHaveWorkedWith"
+      },
+      {
+        "name": "CommPlatformWantToWorkWith",
+        "type": "STRING",
+        "mode": "NULLABLE",
+        "description": "String column: CommPlatformWantToWorkWith"
+      },
+      {
+        "name": "CommPlatformAdmired",
+        "type": "STRING",
+        "mode": "NULLABLE",
+        "description": "String column: CommPlatformAdmired"
+      },
+      {
+        "name": "CommPlatformHaveEntr",
+        "type": "STRING",
+        "mode": "NULLABLE",
+        "description": "String column: CommPlatformHaveEntr"
+      },
+      {
+        "name": "CommPlatformWantEntr",
+        "type": "STRING",
+        "mode": "NULLABLE",
+        "description": "String column: CommPlatformWantEntr"
+      },
+      {
+        "name": "AIModelsChoice",
+        "type": "BOOLEAN",
+        "mode": "NULLABLE",
+        "description": "Boolean column: AIModelsChoice"
+      },
+      {
+        "name": "AIModelsHaveWorkedWith",
+        "type": "STRING",
+        "mode": "NULLABLE",
+        "description": "String column: AIModelsHaveWorkedWith"
+      },
+      {
+        "name": "AIModelsWantToWorkWith",
+        "type": "STRING",
+        "mode": "NULLABLE",
+        "description": "String column: AIModelsWantToWorkWith"
+      },
+      {
+        "name": "AIModelsAdmired",
+        "type": "STRING",
+        "mode": "NULLABLE",
+        "description": "String column: AIModelsAdmired"
+      },
+      {
+        "name": "AIModelsHaveEntry",
+        "type": "STRING",
+        "mode": "NULLABLE",
+        "description": "String column: AIModelsHaveEntry"
+      },
+      {
+        "name": "AIModelsWantEntry",
+        "type": "STRING",
+        "mode": "NULLABLE",
+        "description": "String column: AIModelsWantEntry"
+      },
+      {
+        "name": "SOAccount",
+        "type": "STRING",
+        "mode": "NULLABLE",
+        "description": "String column: SOAccount"
+      },
+      {
+        "name": "SOVisitFreq",
+        "type": "STRING",
+        "mode": "NULLABLE",
+        "description": "String column: SOVisitFreq"
+      },
+      {
+        "name": "SODuration",
+        "type": "STRING",
+        "mode": "NULLABLE",
+        "description": "String column: SODuration"
+      },
+      {
+        "name": "SOPartFreq",
+        "type": "STRING",
+        "mode": "NULLABLE",
+        "description": "String column: SOPartFreq"
+      },
+      {
+        "name": "SO_Dev_Content",
+        "type": "STRING",
+        "mode": "NULLABLE",
+        "description": "String column: SO_Dev_Content"
+      },
+      {
+        "name": "SO_Actions_1",
+        "type": "INTEGER",
+        "mode": "NULLABLE",
+        "description": "Integer column: SO_Actions_1"
+      },
+      {
+        "name": "SO_Actions_16",
+        "type": "INTEGER",
+        "mode": "NULLABLE",
+        "description": "Integer column: SO_Actions_16"
+      },
+      {
+        "name": "SO_Actions_3",
+        "type": "INTEGER",
+        "mode": "NULLABLE",
+        "description": "Integer column: SO_Actions_3"
+      },
+      {
+        "name": "SO_Actions_4",
+        "type": "INTEGER",
+        "mode": "NULLABLE",
+        "description": "Integer column: SO_Actions_4"
+      },
+      {
+        "name": "SO_Actions_5",
+        "type": "INTEGER",
+        "mode": "NULLABLE",
+        "description": "Integer column: SO_Actions_5"
+      },
+      {
+        "name": "SO_Actions_6",
+        "type": "INTEGER",
+        "mode": "NULLABLE",
+        "description": "Integer column: SO_Actions_6"
+      },
+      {
+        "name": "SO_Actions_9",
+        "type": "INTEGER",
+        "mode": "NULLABLE",
+        "description": "Integer column: SO_Actions_9"
+      },
+      {
+        "name": "SO_Actions_7",
+        "type": "INTEGER",
+        "mode": "NULLABLE",
+        "description": "Integer column: SO_Actions_7"
+      },
+      {
+        "name": "SO_Actions_10",
+        "type": "INTEGER",
+        "mode": "NULLABLE",
+        "description": "Integer column: SO_Actions_10"
+      },
+      {
+        "name": "SO_Actions_15",
+        "type": "INTEGER",
+        "mode": "NULLABLE",
+        "description": "Integer column: SO_Actions_15"
+      },
+      {
+        "name": "SO_Actions_15_TEXT",
+        "type": "STRING",
+        "mode": "NULLABLE",
+        "description": "String column: SO_Actions_15_TEXT"
+      },
+      {
+        "name": "SOComm",
+        "type": "STRING",
+        "mode": "NULLABLE",
+        "description": "String column: SOComm"
+      },
+      {
+        "name": "SOFriction",
+        "type": "STRING",
+        "mode": "NULLABLE",
+        "description": "String column: SOFriction"
+      },
+      {
+        "name": "AISelect",
+        "type": "STRING",
+        "mode": "NULLABLE",
+        "description": "String column: AISelect"
+      },
+      {
+        "name": "AISent",
+        "type": "STRING",
+        "mode": "NULLABLE",
+        "description": "String column: AISent"
+      },
+      {
+        "name": "AIAcc",
+        "type": "STRING",
+        "mode": "NULLABLE",
+        "description": "String column: AIAcc"
+      },
+      {
+        "name": "AIComplex",
+        "type": "STRING",
+        "mode": "NULLABLE",
+        "description": "String column: AIComplex"
+      },
+      {
+        "name": "AIToolCurrently_partially_AI",
+        "type": "STRING",
+        "mode": "NULLABLE",
+        "description": "String column: AIToolCurrently_partially_AI (originally: AIToolCurrently partially AI)"
+      },
+      {
+        "name": "AIToolDon_t_plan_to_use_AI_for_this_task",
+        "type": "STRING",
+        "mode": "NULLABLE",
+        "description": "String column: AIToolDon_t_plan_to_use_AI_for_this_task (originally: AIToolDon't plan to use AI for this task)"
+      },
+      {
+        "name": "AIToolPlan_to_partially_use_AI",
+        "type": "STRING",
+        "mode": "NULLABLE",
+        "description": "String column: AIToolPlan_to_partially_use_AI (originally: AIToolPlan to partially use AI)"
+      },
+      {
+        "name": "AIToolPlan_to_mostly_use_AI",
+        "type": "STRING",
+        "mode": "NULLABLE",
+        "description": "String column: AIToolPlan_to_mostly_use_AI (originally: AIToolPlan to mostly use AI)"
+      },
+      {
+        "name": "AIToolCurrently_mostly_AI",
+        "type": "STRING",
+        "mode": "NULLABLE",
+        "description": "String column: AIToolCurrently_mostly_AI (originally: AIToolCurrently mostly AI)"
+      },
+      {
+        "name": "AIFrustration",
+        "type": "STRING",
+        "mode": "NULLABLE",
+        "description": "String column: AIFrustration"
+      },
+      {
+        "name": "AIExplain",
+        "type": "STRING",
+        "mode": "NULLABLE",
+        "description": "String column: AIExplain"
+      },
+      {
+        "name": "AIAgents",
+        "type": "STRING",
+        "mode": "NULLABLE",
+        "description": "String column: AIAgents"
+      },
+      {
+        "name": "AIAgentChange",
+        "type": "STRING",
+        "mode": "NULLABLE",
+        "description": "String column: AIAgentChange"
+      },
+      {
+        "name": "AIAgent_Uses",
+        "type": "STRING",
+        "mode": "NULLABLE",
+        "description": "String column: AIAgent_Uses"
+      },
+      {
+        "name": "AgentUsesGeneral",
+        "type": "STRING",
+        "mode": "NULLABLE",
+        "description": "String column: AgentUsesGeneral"
+      },
+      {
+        "name": "AIAgentImpactSomewhat_agree",
+        "type": "STRING",
+        "mode": "NULLABLE",
+        "description": "String column: AIAgentImpactSomewhat_agree (originally: AIAgentImpactSomewhat agree)"
+      },
+      {
+        "name": "AIAgentImpactNeutral",
+        "type": "STRING",
+        "mode": "NULLABLE",
+        "description": "String column: AIAgentImpactNeutral"
+      },
+      {
+        "name": "AIAgentImpactSomewhat_disagree",
+        "type": "STRING",
+        "mode": "NULLABLE",
+        "description": "String column: AIAgentImpactSomewhat_disagree (originally: AIAgentImpactSomewhat disagree)"
+      },
+      {
+        "name": "AIAgentImpactStrongly_agree",
+        "type": "STRING",
+        "mode": "NULLABLE",
+        "description": "String column: AIAgentImpactStrongly_agree (originally: AIAgentImpactStrongly agree)"
+      },
+      {
+        "name": "AIAgentImpactStrongly_disagree",
+        "type": "STRING",
+        "mode": "NULLABLE",
+        "description": "String column: AIAgentImpactStrongly_disagree (originally: AIAgentImpactStrongly disagree)"
+      },
+      {
+        "name": "AIAgentChallengesNeutral",
+        "type": "STRING",
+        "mode": "NULLABLE",
+        "description": "String column: AIAgentChallengesNeutral"
+      },
+      {
+        "name": "AIAgentChallengesSomewhat_disagree",
+        "type": "STRING",
+        "mode": "NULLABLE",
+        "description": "String column: AIAgentChallengesSomewhat_disagree (originally: AIAgentChallengesSomewhat disagree)"
+      },
+      {
+        "name": "AIAgentChallengesStrongly_agree",
+        "type": "STRING",
+        "mode": "NULLABLE",
+        "description": "String column: AIAgentChallengesStrongly_agree (originally: AIAgentChallengesStrongly agree)"
+      },
+      {
+        "name": "AIAgentChallengesSomewhat_agree",
+        "type": "STRING",
+        "mode": "NULLABLE",
+        "description": "String column: AIAgentChallengesSomewhat_agree (originally: AIAgentChallengesSomewhat agree)"
+      },
+      {
+        "name": "AIAgentChallengesStrongly_disagree",
+        "type": "STRING",
+        "mode": "NULLABLE",
+        "description": "String column: AIAgentChallengesStrongly_disagree (originally: AIAgentChallengesStrongly disagree)"
+      },
+      {
+        "name": "AIAgentKnowledge",
+        "type": "STRING",
+        "mode": "NULLABLE",
+        "description": "String column: AIAgentKnowledge"
+      },
+      {
+        "name": "AIAgentKnowWrite",
+        "type": "STRING",
+        "mode": "NULLABLE",
+        "description": "String column: AIAgentKnowWrite"
+      },
+      {
+        "name": "AIAgentOrchestration",
+        "type": "STRING",
+        "mode": "NULLABLE",
+        "description": "String column: AIAgentOrchestration"
+      },
+      {
+        "name": "AIAgentOrchWrite",
+        "type": "STRING",
+        "mode": "NULLABLE",
+        "description": "String column: AIAgentOrchWrite"
+      },
+      {
+        "name": "AIAgentObserveSecure",
+        "type": "STRING",
+        "mode": "NULLABLE",
+        "description": "String column: AIAgentObserveSecure"
+      },
+      {
+        "name": "AIAgentObsWrite",
+        "type": "STRING",
+        "mode": "NULLABLE",
+        "description": "String column: AIAgentObsWrite"
+      },
+      {
+        "name": "AIAgentExternal",
+        "type": "STRING",
+        "mode": "NULLABLE",
+        "description": "String column: AIAgentExternal"
+      },
+      {
+        "name": "AIAgentExtWrite",
+        "type": "STRING",
+        "mode": "NULLABLE",
+        "description": "String column: AIAgentExtWrite"
+      },
+      {
+        "name": "AIHuman",
+        "type": "STRING",
+        "mode": "NULLABLE",
+        "description": "String column: AIHuman"
+      },
+      {
+        "name": "AIOpen",
+        "type": "STRING",
+        "mode": "NULLABLE",
+        "description": "String column: AIOpen"
+      },
+      {
+        "name": "ConvertedCompYearly",
+        "type": "INTEGER",
+        "mode": "NULLABLE",
+        "description": "Salary field: ConvertedCompYearly (cleaned, outliers >1e9 removed)"
+      },
+      {
+        "name": "JobSat",
+        "type": "INTEGER",
+        "mode": "NULLABLE",
+        "description": "Integer column: JobSat"
+      },
+      {
+        "name": "survey_year",
+        "type": "INTEGER",
+        "mode": "NULLABLE",
+        "description": "Integer column: survey_year"
+      },
+      {
+        "name": "processing_timestamp",
+        "type": "TIMESTAMP",
+        "mode": "NULLABLE",
+        "description": "Timestamp column: processing_timestamp"
+      },
+      {
+        "name": "source_encoding",
+        "type": "STRING",
+        "mode": "NULLABLE",
+        "description": "String column: source_encoding"
+      }
+    ]
+  },
+  "metadata": {
+    "year": 2025,
+    "total_fields": 173,
+    "generated_timestamp": "2025-10-07T17:18:23.157090",
+    "source": "2025_stackoverflow_cleaned.csv",
+    "table_description": "StackOverflow Developer Survey 2025 - Cleaned and processed for analysis"
+  }
+}

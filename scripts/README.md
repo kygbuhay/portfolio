@@ -74,6 +74,12 @@ case_study_project/
 
 ## 🛠️ Scripts Overview
 
+### 🧹 **Data Processing & Cleaning**
+**See:** [`cleaning/`](cleaning/) subdirectory for data inventory and processing pipelines
+- **`run_data_inventory.sh`** - Complete data profiling workflow
+- **`data_inventory_master_pass1.py`** - Multi-encoding CSV analysis engine
+- **`corruption_check.py`** - Dataset validation utility
+
 ### `export_figures.py` & `export_figures_menu.sh`
 **Export matplotlib/seaborn figures from Jupyter notebooks with descriptive filenames**
 

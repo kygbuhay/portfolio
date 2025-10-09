@@ -1,0 +1,1697 @@
+{
+  "year": 2023,
+  "file": "/home/admin/Documents/portfolio/scripts/cleaning/../../coursework/google-data-analytics/ai_workplace_productivity_analysis/data/raw/stackoverflow_2023.csv",
+  "file_size_mb": 151.28,
+  "loaded_ok": true,
+  "rows_loaded": 89184,
+  "estimated_rows_in_file_ex_header": 89184,
+  "estimated_rows_skipped": 0,
+  "structural_corruption": false,
+  "structural_scan": {
+    "expected_ncols": 84,
+    "field_count_histogram": {
+      "84": 89184
+    },
+    "anomalous_field_counts": {},
+    "offending_examples": [],
+    "total_lines_including_header": 89185,
+    "encoding_used": "utf-8-sig"
+  },
+  "n_columns_detected": 84,
+  "columns": [
+    {
+      "index": 0,
+      "name": "ResponseId",
+      "null_count": 0,
+      "null_pct": 0.0,
+      "is_numeric": true,
+      "looks_like_date": false,
+      "is_multiselect": false,
+      "unique_approx": 10000,
+      "examples": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "index": 1,
+      "name": "Q120",
+      "null_count": 0,
+      "null_pct": 0.0,
+      "is_numeric": false,
+      "looks_like_date": false,
+      "is_multiselect": false,
+      "unique_approx": 1,
+      "examples": [
+        "I agree"
+      ]
+    },
+    {
+      "index": 2,
+      "name": "MainBranch",
+      "null_count": 0,
+      "null_pct": 0.0,
+      "is_numeric": false,
+      "looks_like_date": false,
+      "is_multiselect": false,
+      "unique_approx": 6,
+      "examples": [
+        "I am a developer by profession",
+        "I am not primarily a developer, but I write code sometimes as part of my work/studies",
+        "I am learning to code",
+        "I code primarily as a hobby",
+        "I used to be a developer by profession, but no longer am",
+        "None of these"
+      ]
+    },
+    {
+      "index": 3,
+      "name": "Age",
+      "null_count": 0,
+      "null_pct": 0.0,
+      "is_numeric": false,
+      "looks_like_date": false,
+      "is_multiselect": false,
+      "unique_approx": 8,
+      "examples": [
+        "25-34 years old",
+        "35-44 years old",
+        "18-24 years old",
+        "45-54 years old",
+        "Under 18 years old",
+        "55-64 years old",
+        "65 years or older",
+        "Prefer not to say"
+      ]
+    },
+    {
+      "index": 4,
+      "name": "Employment",
+      "null_count": 1286,
+      "null_pct": 1.44,
+      "is_numeric": false,
+      "looks_like_date": false,
+      "is_multiselect": false,
+      "unique_approx": 107,
+      "examples": [
+        "Employed, full-time",
+        "Student, full-time",
+        "Independent contractor, freelancer, or self-employed",
+        "Employed, full-time;Independent contractor, freelancer, or self-employed",
+        "Not employed, but looking for work",
+        "Employed, part-time",
+        "Student, full-time;Employed, part-time",
+        "nan",
+        "Employed, full-time;Student, part-time",
+        "Employed, full-time;Student, full-time"
+      ]
+    },
+    {
+      "index": 5,
+      "name": "RemoteWork",
+      "null_count": 15374,
+      "null_pct": 17.24,
+      "is_numeric": false,
+      "looks_like_date": false,
+      "is_multiselect": false,
+      "unique_approx": 4,
+      "examples": [
+        "Hybrid (some remote, some in-person)",
+        "Remote",
+        "nan",
+        "In-person"
+      ]
+    },
+    {
+      "index": 6,
+      "name": "CodingActivities",
+      "null_count": 15420,
+      "null_pct": 17.29,
+      "is_numeric": false,
+      "looks_like_date": false,
+      "is_multiselect": true,
+      "unique_approx": 117,
+      "examples": [
+        "nan",
+        "Hobby",
+        "I don\u2019t code outside of work",
+        "Hobby;Professional development or self-paced learning from online courses",
+        "Hobby;Contribute to open-source projects",
+        "Professional development or self-paced learning from online courses",
+        "Hobby;Contribute to open-source projects;Professional development or self-paced learning from online courses",
+        "Hobby;Freelance/contract work",
+        "Hobby;School or academic work",
+        "Hobby;Professional development or self-paced learning from online courses;Freelance/contract work"
+      ]
+    },
+    {
+      "index": 7,
+      "name": "EdLevel",
+      "null_count": 1211,
+      "null_pct": 1.36,
+      "is_numeric": false,
+      "looks_like_date": false,
+      "is_multiselect": false,
+      "unique_approx": 9,
+      "examples": [
+        "Bachelor\u2019s degree (B.A., B.S., B.Eng., etc.)",
+        "Master\u2019s degree (M.A., M.S., M.Eng., MBA, etc.)",
+        "Some college/university study without earning a degree",
+        "Secondary school (e.g. American high school, German Realschule or Gymnasium, etc.)",
+        "Professional degree (JD, MD, Ph.D, Ed.D, etc.)",
+        "Associate degree (A.A., A.S., etc.)",
+        "Primary/elementary school",
+        "Something else",
+        "nan"
+      ]
+    },
+    {
+      "index": 8,
+      "name": "LearnCode",
+      "null_count": 1521,
+      "null_pct": 1.71,
+      "is_numeric": false,
+      "looks_like_date": false,
+      "is_multiselect": true,
+      "unique_approx": 791,
+      "examples": [
+        "Other online resources (e.g., videos, blogs, forum)",
+        "Books / Physical media;Other online resources (e.g., videos, blogs, forum)",
+        "Other online resources (e.g., videos, blogs, forum);School (i.e., University, College, etc)",
+        "Books / Physical media;Online Courses or Certification;Other online resources (e.g., videos, blogs, forum)",
+        "Online Courses or Certification;Other online resources (e.g., videos, blogs, forum)",
+        "Books / Physical media;Other online resources (e.g., videos, blogs, forum);School (i.e., University, College, etc)",
+        "Books / Physical media;Online Courses or Certification;On the job training;Other online resources (e.g., videos, blogs, forum);School (i.e., University, College, etc)",
+        "Books / Physical media;Online Courses or Certification;On the job training;Other online resources (e.g., videos, blogs, forum)",
+        "School (i.e., University, College, etc)",
+        "Online Courses or Certification;On the job training;Other online resources (e.g., videos, blogs, forum)"
+      ]
+    },
+    {
+      "index": 9,
+      "name": "LearnCodeOnline",
+      "null_count": 19100,
+      "null_pct": 21.42,
+      "is_numeric": false,
+      "looks_like_date": false,
+      "is_multiselect": true,
+      "unique_approx": 7941,
+      "examples": [
+        "nan",
+        "Formal documentation provided by the owner of the tech;Blogs with tips and tricks;Written Tutorials;Click to write Choice 20;Stack Overflow",
+        "Formal documentation provided by the owner of the tech;Blogs with tips and tricks;Written Tutorials;Stack Overflow",
+        "Formal documentation provided by the owner of the tech;Blogs with tips and tricks;Stack Overflow",
+        "Formal documentation provided by the owner of the tech;Blogs with tips and tricks;How-to videos;Written Tutorials;Click to write Choice 20;Stack Overflow",
+        "Formal documentation provided by the owner of the tech;Blogs with tips and tricks;Books;Written Tutorials;Click to write Choice 20;Stack Overflow",
+        "Formal documentation provided by the owner of the tech;Blogs with tips and tricks;Books;Written Tutorials;Stack Overflow",
+        "Formal documentation provided by the owner of the tech;Blogs with tips and tricks;How-to videos;Stack Overflow",
+        "Formal documentation provided by the owner of the tech;Blogs with tips and tricks;How-to videos;Written Tutorials;Stack Overflow",
+        "Formal documentation provided by the owner of the tech;Blogs with tips and tricks;Click to write Choice 20;Stack Overflow"
+      ]
+    },
+    {
+      "index": 10,
+      "name": "LearnCodeCoursesCert",
+      "null_count": 52108,
+      "null_pct": 58.43,
+      "is_numeric": false,
+      "looks_like_date": false,
+      "is_multiselect": true,
+      "unique_approx": 211,
+      "examples": [
+        "nan",
+        "Udemy",
+        "Other",
+        "Udemy;Coursera",
+        "Udemy;Pluralsight",
+        "Codecademy;Udemy",
+        "Coursera",
+        "Pluralsight",
+        "Other;Udemy",
+        "Codecademy"
+      ]
+    },
+    {
+      "index": 11,
+      "name": "YearsCode",
+      "null_count": 1749,
+      "null_pct": 1.96,
+      "is_numeric": true,
+      "looks_like_date": false,
+      "is_multiselect": false,
+      "unique_approx": 50,
+      "examples": [
+        18.0,
+        27.0,
+        12.0,
+        6.0,
+        21.0
+      ]
+    },
+    {
+      "index": 12,
+      "name": "YearsCodePro",
+      "null_count": 23048,
+      "null_pct": 25.84,
+      "is_numeric": true,
+      "looks_like_date": false,
+      "is_multiselect": false,
+      "unique_approx": 50,
+      "examples": [
+        9.0,
+        23.0,
+        7.0,
+        4.0,
+        21.0
+      ]
+    },
+    {
+      "index": 13,
+      "name": "DevType",
+      "null_count": 12312,
+      "null_pct": 13.81,
+      "is_numeric": false,
+      "looks_like_date": false,
+      "is_multiselect": false,
+      "unique_approx": 34,
+      "examples": [
+        "Developer, full-stack",
+        "Developer, back-end",
+        "nan",
+        "Developer, front-end",
+        "Developer, desktop or enterprise applications",
+        "Other (please specify):",
+        "Developer, mobile",
+        "Engineering manager",
+        "Student",
+        "Developer, embedded applications or devices"
+      ]
+    },
+    {
+      "index": 14,
+      "name": "OrgSize",
+      "null_count": 24141,
+      "null_pct": 27.07,
+      "is_numeric": false,
+      "looks_like_date": false,
+      "is_multiselect": false,
+      "unique_approx": 11,
+      "examples": [
+        "nan",
+        "20 to 99 employees",
+        "100 to 499 employees",
+        "10,000 or more employees",
+        "1,000 to 4,999 employees",
+        "2 to 9 employees",
+        "10 to 19 employees",
+        "500 to 999 employees",
+        "Just me - I am a freelancer, sole proprietor, etc.",
+        "5,000 to 9,999 employees"
+      ]
+    },
+    {
+      "index": 15,
+      "name": "PurchaseInfluence",
+      "null_count": 24220,
+      "null_pct": 27.16,
+      "is_numeric": false,
+      "looks_like_date": false,
+      "is_multiselect": false,
+      "unique_approx": 4,
+      "examples": [
+        "I have some influence",
+        "nan",
+        "I have little or no influence",
+        "I have a great deal of influence"
+      ]
+    },
+    {
+      "index": 16,
+      "name": "TechList",
+      "null_count": 28333,
+      "null_pct": 31.77,
+      "is_numeric": false,
+      "looks_like_date": false,
+      "is_multiselect": false,
+      "unique_approx": 4,
+      "examples": [
+        "Investigate",
+        "nan",
+        "Given a list",
+        "Other"
+      ]
+    },
+    {
+      "index": 17,
+      "name": "BuyNewTool",
+      "null_count": 6175,
+      "null_pct": 6.92,
+      "is_numeric": false,
+      "looks_like_date": false,
+      "is_multiselect": true,
+      "unique_approx": 232,
+      "examples": [
+        "Start a free trial;Ask developers I know/work with;Visit developer communities like Stack Overflow",
+        "Start a free trial;Ask developers I know/work with",
+        "Start a free trial;Ask developers I know/work with;Visit developer communities like Stack Overflow;Read ratings or reviews on third party sites like G2 Crowd",
+        "nan",
+        "Start a free trial",
+        "Ask developers I know/work with;Visit developer communities like Stack Overflow",
+        "Start a free trial;Visit developer communities like Stack Overflow",
+        "Start a free trial;Ask developers I know/work with;Read ratings or reviews on third party sites like G2 Crowd",
+        "Start a free trial;Ask developers I know/work with;Visit developer communities like Stack Overflow;Ask a generative AI tool",
+        "Start a free trial;Visit developer communities like Stack Overflow;Read ratings or reviews on third party sites like G2 Crowd"
+      ]
+    },
+    {
+      "index": 18,
+      "name": "Country",
+      "null_count": 1211,
+      "null_pct": 1.36,
+      "is_numeric": false,
+      "looks_like_date": false,
+      "is_multiselect": false,
+      "unique_approx": 186,
+      "examples": [
+        "United States of America",
+        "Germany",
+        "India",
+        "United Kingdom of Great Britain and Northern Ireland",
+        "Canada",
+        "France",
+        "Poland",
+        "Netherlands",
+        "Australia",
+        "Brazil"
+      ]
+    },
+    {
+      "index": 19,
+      "name": "Currency",
+      "null_count": 23850,
+      "null_pct": 26.74,
+      "is_numeric": false,
+      "looks_like_date": false,
+      "is_multiselect": false,
+      "unique_approx": 145,
+      "examples": [
+        "nan",
+        "EUR European Euro",
+        "USD\tUnited States dollar",
+        "GBP\tPound sterling",
+        "INR\tIndian rupee",
+        "CAD\tCanadian dollar",
+        "PLN\tPolish zloty",
+        "AUD\tAustralian dollar",
+        "BRL\tBrazilian real",
+        "SEK\tSwedish krona"
+      ]
+    },
+    {
+      "index": 20,
+      "name": "CompTotal",
+      "null_count": 40959,
+      "null_pct": 45.93,
+      "is_numeric": true,
+      "looks_like_date": false,
+      "is_multiselect": false,
+      "unique_approx": 3828,
+      "examples": [
+        285000.0,
+        250000.0,
+        156000.0,
+        1320000.0,
+        78000.0
+      ]
+    },
+    {
+      "index": 21,
+      "name": "LanguageHaveWorkedWith",
+      "null_count": 2044,
+      "null_pct": 2.29,
+      "is_numeric": false,
+      "looks_like_date": false,
+      "is_multiselect": true,
+      "unique_approx": 10000,
+      "examples": [
+        "nan",
+        "HTML/CSS;JavaScript;TypeScript",
+        "Python",
+        "HTML/CSS;JavaScript",
+        "HTML/CSS;JavaScript;PHP;SQL",
+        "C#",
+        "JavaScript;TypeScript",
+        "C#;HTML/CSS;JavaScript;SQL;TypeScript",
+        "Java",
+        "Python;SQL"
+      ]
+    },
+    {
+      "index": 22,
+      "name": "LanguageWantToWorkWith",
+      "null_count": 8475,
+      "null_pct": 9.5,
+      "is_numeric": false,
+      "looks_like_date": false,
+      "is_multiselect": true,
+      "unique_approx": 10000,
+      "examples": [
+        "nan",
+        "Rust",
+        "Python",
+        "HTML/CSS;JavaScript;TypeScript",
+        "C#",
+        "Go",
+        "TypeScript",
+        "JavaScript;TypeScript",
+        "Java",
+        "Python;Rust"
+      ]
+    },
+    {
+      "index": 23,
+      "name": "DatabaseHaveWorkedWith",
+      "null_count": 15749,
+      "null_pct": 17.66,
+      "is_numeric": false,
+      "looks_like_date": false,
+      "is_multiselect": true,
+      "unique_approx": 10000,
+      "examples": [
+        "nan",
+        "PostgreSQL",
+        "Microsoft SQL Server",
+        "MySQL",
+        "SQLite",
+        "MongoDB",
+        "PostgreSQL;SQLite",
+        "PostgreSQL;Redis",
+        "MariaDB;MySQL",
+        "MySQL;SQLite"
+      ]
+    },
+    {
+      "index": 24,
+      "name": "DatabaseWantToWorkWith",
+      "null_count": 28273,
+      "null_pct": 31.7,
+      "is_numeric": false,
+      "looks_like_date": false,
+      "is_multiselect": true,
+      "unique_approx": 10000,
+      "examples": [
+        "nan",
+        "PostgreSQL",
+        "Microsoft SQL Server",
+        "SQLite",
+        "MySQL",
+        "PostgreSQL;SQLite",
+        "MongoDB",
+        "PostgreSQL;Redis",
+        "MongoDB;PostgreSQL",
+        "MySQL;PostgreSQL"
+      ]
+    },
+    {
+      "index": 25,
+      "name": "PlatformHaveWorkedWith",
+      "null_count": 25556,
+      "null_pct": 28.66,
+      "is_numeric": false,
+      "looks_like_date": false,
+      "is_multiselect": true,
+      "unique_approx": 5921,
+      "examples": [
+        "nan",
+        "Amazon Web Services (AWS)",
+        "Microsoft Azure",
+        "Google Cloud",
+        "Amazon Web Services (AWS);Microsoft Azure",
+        "Amazon Web Services (AWS);Google Cloud",
+        "Firebase",
+        "Amazon Web Services (AWS);Cloudflare",
+        "Digital Ocean",
+        "VMware"
+      ]
+    },
+    {
+      "index": 26,
+      "name": "PlatformWantToWorkWith",
+      "null_count": 37876,
+      "null_pct": 42.47,
+      "is_numeric": false,
+      "looks_like_date": false,
+      "is_multiselect": true,
+      "unique_approx": 4964,
+      "examples": [
+        "nan",
+        "Amazon Web Services (AWS)",
+        "Microsoft Azure",
+        "Amazon Web Services (AWS);Microsoft Azure",
+        "Google Cloud",
+        "Amazon Web Services (AWS);Google Cloud",
+        "Amazon Web Services (AWS);Google Cloud;Microsoft Azure",
+        "Firebase",
+        "Vercel",
+        "Digital Ocean"
+      ]
+    },
+    {
+      "index": 27,
+      "name": "WebframeHaveWorkedWith",
+      "null_count": 22246,
+      "null_pct": 24.94,
+      "is_numeric": false,
+      "looks_like_date": false,
+      "is_multiselect": true,
+      "unique_approx": 10000,
+      "examples": [
+        "nan",
+        "React",
+        "Spring Boot",
+        "Node.js",
+        "Node.js;React",
+        "Flask",
+        "WordPress",
+        "jQuery",
+        "Django",
+        "ASP.NET CORE"
+      ]
+    },
+    {
+      "index": 28,
+      "name": "WebframeWantToWorkWith",
+      "null_count": 32443,
+      "null_pct": 36.38,
+      "is_numeric": false,
+      "looks_like_date": false,
+      "is_multiselect": true,
+      "unique_approx": 10000,
+      "examples": [
+        "nan",
+        "React",
+        "Spring Boot",
+        "Node.js",
+        "ASP.NET CORE",
+        "Svelte",
+        "Node.js;React",
+        "ASP.NET CORE;Blazor",
+        "Next.js;Node.js;React",
+        "FastAPI"
+      ]
+    },
+    {
+      "index": 29,
+      "name": "MiscTechHaveWorkedWith",
+      "null_count": 32165,
+      "null_pct": 36.07,
+      "is_numeric": false,
+      "looks_like_date": false,
+      "is_multiselect": true,
+      "unique_approx": 10000,
+      "examples": [
+        "nan",
+        ".NET (5+) ;.NET Framework (1.0 - 4.8)",
+        ".NET (5+) ",
+        "Spring Framework",
+        "Flutter",
+        "React Native",
+        ".NET Framework (1.0 - 4.8)",
+        "RabbitMQ",
+        "NumPy;Pandas",
+        "Apache Kafka"
+      ]
+    },
+    {
+      "index": 30,
+      "name": "MiscTechWantToWorkWith",
+      "null_count": 42336,
+      "null_pct": 47.47,
+      "is_numeric": false,
+      "looks_like_date": false,
+      "is_multiselect": true,
+      "unique_approx": 10000,
+      "examples": [
+        "nan",
+        ".NET (5+) ",
+        "Flutter",
+        "Spring Framework",
+        ".NET (5+) ;.NET Framework (1.0 - 4.8)",
+        "React Native",
+        "Apache Kafka",
+        ".NET (5+) ;.NET MAUI",
+        "SwiftUI",
+        "RabbitMQ"
+      ]
+    },
+    {
+      "index": 31,
+      "name": "ToolsTechHaveWorkedWith",
+      "null_count": 11300,
+      "null_pct": 12.67,
+      "is_numeric": false,
+      "looks_like_date": false,
+      "is_multiselect": true,
+      "unique_approx": 10000,
+      "examples": [
+        "nan",
+        "Visual Studio Solution",
+        "Docker",
+        "npm",
+        "Pip",
+        "Maven (build tool)",
+        "Gradle",
+        "Docker;npm",
+        "Docker;Pip",
+        "npm;Webpack"
+      ]
+    },
+    {
+      "index": 32,
+      "name": "ToolsTechWantToWorkWith",
+      "null_count": 20869,
+      "null_pct": 23.4,
+      "is_numeric": false,
+      "looks_like_date": false,
+      "is_multiselect": true,
+      "unique_approx": 10000,
+      "examples": [
+        "nan",
+        "Docker",
+        "Visual Studio Solution",
+        "npm",
+        "Cargo",
+        "Docker;Kubernetes",
+        "Pip",
+        "Gradle",
+        "Kubernetes",
+        "Docker;npm"
+      ]
+    },
+    {
+      "index": 33,
+      "name": "NEWCollabToolsHaveWorkedWith",
+      "null_count": 3320,
+      "null_pct": 3.72,
+      "is_numeric": false,
+      "looks_like_date": false,
+      "is_multiselect": true,
+      "unique_approx": 10000,
+      "examples": [
+        "Visual Studio Code",
+        "Visual Studio;Visual Studio Code",
+        "nan",
+        "Notepad++;Visual Studio;Visual Studio Code",
+        "IntelliJ IDEA;Visual Studio Code",
+        "Vim;Visual Studio Code",
+        "Neovim",
+        "IntelliJ IDEA",
+        "Notepad++;Visual Studio Code",
+        "Visual Studio"
+      ]
+    },
+    {
+      "index": 34,
+      "name": "NEWCollabToolsWantToWorkWith",
+      "null_count": 12535,
+      "null_pct": 14.06,
+      "is_numeric": false,
+      "looks_like_date": false,
+      "is_multiselect": true,
+      "unique_approx": 10000,
+      "examples": [
+        "nan",
+        "Visual Studio Code",
+        "Visual Studio;Visual Studio Code",
+        "Neovim",
+        "Notepad++;Visual Studio;Visual Studio Code",
+        "Vim;Visual Studio Code",
+        "IntelliJ IDEA;Visual Studio Code",
+        "IntelliJ IDEA",
+        "Neovim;Visual Studio Code",
+        "Vim"
+      ]
+    },
+    {
+      "index": 35,
+      "name": "OpSysPersonal use",
+      "null_count": 2627,
+      "null_pct": 2.95,
+      "is_numeric": false,
+      "looks_like_date": false,
+      "is_multiselect": true,
+      "unique_approx": 3051,
+      "examples": [
+        "Windows",
+        "MacOS",
+        "Ubuntu",
+        "Windows;Windows Subsystem for Linux (WSL)",
+        "Ubuntu;Windows",
+        "Android;Windows",
+        "nan",
+        "MacOS;Windows",
+        "Arch",
+        "Ubuntu;Windows;Windows Subsystem for Linux (WSL)"
+      ]
+    },
+    {
+      "index": 36,
+      "name": "OpSysProfessional use",
+      "null_count": 10597,
+      "null_pct": 11.88,
+      "is_numeric": false,
+      "looks_like_date": false,
+      "is_multiselect": true,
+      "unique_approx": 2471,
+      "examples": [
+        "Windows",
+        "MacOS",
+        "nan",
+        "Ubuntu",
+        "Windows;Windows Subsystem for Linux (WSL)",
+        "Ubuntu;Windows",
+        "MacOS;Ubuntu",
+        "Ubuntu;Windows;Windows Subsystem for Linux (WSL)",
+        "MacOS;Windows",
+        "Arch"
+      ]
+    },
+    {
+      "index": 37,
+      "name": "OfficeStackAsyncHaveWorkedWith",
+      "null_count": 20094,
+      "null_pct": 22.53,
+      "is_numeric": false,
+      "looks_like_date": false,
+      "is_multiselect": true,
+      "unique_approx": 6259,
+      "examples": [
+        "nan",
+        "Jira",
+        "Confluence;Jira",
+        "Markdown File",
+        "Azure Devops",
+        "GitHub Discussions",
+        "Trello",
+        "Confluence;Jira;Markdown File",
+        "Notion",
+        "Confluence;Jira;Miro"
+      ]
+    },
+    {
+      "index": 38,
+      "name": "OfficeStackAsyncWantToWorkWith",
+      "null_count": 35441,
+      "null_pct": 39.74,
+      "is_numeric": false,
+      "looks_like_date": false,
+      "is_multiselect": true,
+      "unique_approx": 3755,
+      "examples": [
+        "nan",
+        "Jira",
+        "Markdown File",
+        "Confluence;Jira",
+        "Azure Devops",
+        "GitHub Discussions",
+        "Notion",
+        "Trello",
+        "GitHub Discussions;Markdown File",
+        "Confluence"
+      ]
+    },
+    {
+      "index": 39,
+      "name": "OfficeStackSyncHaveWorkedWith",
+      "null_count": 5745,
+      "null_pct": 6.44,
+      "is_numeric": false,
+      "looks_like_date": false,
+      "is_multiselect": true,
+      "unique_approx": 6926,
+      "examples": [
+        "Microsoft Teams",
+        "nan",
+        "Slack;Zoom",
+        "Discord",
+        "Microsoft Teams;Slack",
+        "Slack",
+        "Google Meet;Slack",
+        "Discord;Microsoft Teams",
+        "Microsoft Teams;Zoom",
+        "Google Meet;Slack;Zoom"
+      ]
+    },
+    {
+      "index": 40,
+      "name": "OfficeStackSyncWantToWorkWith",
+      "null_count": 19408,
+      "null_pct": 21.76,
+      "is_numeric": false,
+      "looks_like_date": false,
+      "is_multiselect": true,
+      "unique_approx": 4079,
+      "examples": [
+        "nan",
+        "Microsoft Teams",
+        "Slack",
+        "Discord",
+        "Google Meet;Slack",
+        "Slack;Zoom",
+        "Discord;Slack",
+        "Microsoft Teams;Slack",
+        "Discord;Microsoft Teams",
+        "Discord;Google Meet;Slack"
+      ]
+    },
+    {
+      "index": 41,
+      "name": "AISearchHaveWorkedWith",
+      "null_count": 32856,
+      "null_pct": 36.84,
+      "is_numeric": false,
+      "looks_like_date": false,
+      "is_multiselect": true,
+      "unique_approx": 324,
+      "examples": [
+        "nan",
+        "ChatGPT",
+        "Bing AI;ChatGPT",
+        "ChatGPT;WolframAlpha",
+        "ChatGPT;Google Bard AI",
+        "Bing AI;ChatGPT;Google Bard AI",
+        "WolframAlpha",
+        "Bing AI;ChatGPT;WolframAlpha",
+        "Bing AI",
+        "ChatGPT;Phind"
+      ]
+    },
+    {
+      "index": 42,
+      "name": "AISearchWantToWorkWith",
+      "null_count": 43034,
+      "null_pct": 48.25,
+      "is_numeric": false,
+      "looks_like_date": false,
+      "is_multiselect": true,
+      "unique_approx": 400,
+      "examples": [
+        "nan",
+        "ChatGPT",
+        "ChatGPT;Google Bard AI",
+        "Bing AI;ChatGPT",
+        "Bing AI;ChatGPT;Google Bard AI",
+        "ChatGPT;WolframAlpha",
+        "WolframAlpha",
+        "Google Bard AI",
+        "Bing AI",
+        "Bing AI;ChatGPT;Google Bard AI;WolframAlpha"
+      ]
+    },
+    {
+      "index": 43,
+      "name": "AIDevHaveWorkedWith",
+      "null_count": 63280,
+      "null_pct": 70.95,
+      "is_numeric": false,
+      "looks_like_date": false,
+      "is_multiselect": false,
+      "unique_approx": 167,
+      "examples": [
+        "nan",
+        "GitHub Copilot",
+        "GitHub Copilot;Tabnine",
+        "Tabnine",
+        "AWS CodeWhisperer;GitHub Copilot",
+        "AWS CodeWhisperer",
+        "AWS CodeWhisperer;GitHub Copilot;Tabnine",
+        "Synk Code",
+        "Codeium",
+        "GitHub Copilot;Synk Code"
+      ]
+    },
+    {
+      "index": 44,
+      "name": "AIDevWantToWorkWith",
+      "null_count": 69597,
+      "null_pct": 78.04,
+      "is_numeric": false,
+      "looks_like_date": false,
+      "is_multiselect": false,
+      "unique_approx": 234,
+      "examples": [
+        "nan",
+        "GitHub Copilot",
+        "AWS CodeWhisperer;GitHub Copilot",
+        "Tabnine",
+        "GitHub Copilot;Tabnine",
+        "AWS CodeWhisperer",
+        "GitHub Copilot;Whispr AI",
+        "AWS CodeWhisperer;GitHub Copilot;Tabnine",
+        "Codeium",
+        "GitHub Copilot;Replit Ghostwriter"
+      ]
+    },
+    {
+      "index": 45,
+      "name": "NEWSOSites",
+      "null_count": 1211,
+      "null_pct": 1.36,
+      "is_numeric": false,
+      "looks_like_date": false,
+      "is_multiselect": true,
+      "unique_approx": 17,
+      "examples": [
+        "Stack Overflow;Stack Exchange",
+        "Stack Overflow",
+        "Stack Overflow;Stack Exchange;Collectives on Stack Overflow",
+        "Stack Overflow;Stack Exchange;Stack Overflow for Teams (private knowledge sharing & collaboration platform for companies)",
+        "nan",
+        "Stack Overflow;Collectives on Stack Overflow",
+        "Stack Overflow;Stack Exchange;Stack Overflow for Teams (private knowledge sharing & collaboration platform for companies);Collectives on Stack Overflow",
+        "Stack Overflow;Stack Overflow for Teams (private knowledge sharing & collaboration platform for companies)",
+        "I have never visited Stack Overflow or the Stack Exchange network",
+        "Collectives on Stack Overflow"
+      ]
+    },
+    {
+      "index": 46,
+      "name": "SOVisitFreq",
+      "null_count": 2044,
+      "null_pct": 2.29,
+      "is_numeric": false,
+      "looks_like_date": false,
+      "is_multiselect": false,
+      "unique_approx": 6,
+      "examples": [
+        "A few times per week",
+        "Daily or almost daily",
+        "A few times per month or weekly",
+        "Multiple times per day",
+        "Less than once per month or monthly",
+        "nan"
+      ]
+    },
+    {
+      "index": 47,
+      "name": "SOAccount",
+      "null_count": 1332,
+      "null_pct": 1.49,
+      "is_numeric": false,
+      "looks_like_date": false,
+      "is_multiselect": false,
+      "unique_approx": 4,
+      "examples": [
+        "Yes",
+        "No",
+        "Not sure/can't remember",
+        "nan"
+      ]
+    },
+    {
+      "index": 48,
+      "name": "SOPartFreq",
+      "null_count": 23123,
+      "null_pct": 25.93,
+      "is_numeric": false,
+      "looks_like_date": false,
+      "is_multiselect": false,
+      "unique_approx": 7,
+      "examples": [
+        "Less than once per month or monthly",
+        "nan",
+        "I have never participated in Q&A on Stack Overflow",
+        "A few times per month or weekly",
+        "A few times per week",
+        "Daily or almost daily",
+        "Multiple times per day"
+      ]
+    },
+    {
+      "index": 49,
+      "name": "SOComm",
+      "null_count": 1492,
+      "null_pct": 1.67,
+      "is_numeric": false,
+      "looks_like_date": false,
+      "is_multiselect": false,
+      "unique_approx": 7,
+      "examples": [
+        "No, not really",
+        "Neutral",
+        "Yes, somewhat",
+        "No, not at all",
+        "Yes, definitely",
+        "nan",
+        "Not sure"
+      ]
+    },
+    {
+      "index": 50,
+      "name": "SOAI",
+      "null_count": 41326,
+      "null_pct": 46.34,
+      "is_numeric": true,
+      "looks_like_date": false,
+      "is_multiselect": false,
+      "unique_approx": 8,
+      "examples": [
+        1.0,
+        5.0,
+        2.0,
+        6058386073.0,
+        24.0
+      ]
+    },
+    {
+      "index": 51,
+      "name": "AISelect",
+      "null_count": 1211,
+      "null_pct": 1.36,
+      "is_numeric": false,
+      "looks_like_date": false,
+      "is_multiselect": false,
+      "unique_approx": 4,
+      "examples": [
+        "Yes",
+        "No, and I don't plan to",
+        "No, but I plan to soon",
+        "nan"
+      ]
+    },
+    {
+      "index": 52,
+      "name": "AISent",
+      "null_count": 27683,
+      "null_pct": 31.04,
+      "is_numeric": false,
+      "looks_like_date": false,
+      "is_multiselect": false,
+      "unique_approx": 7,
+      "examples": [
+        "Favorable",
+        "nan",
+        "Very favorable",
+        "Indifferent",
+        "Unsure",
+        "Unfavorable",
+        "Very unfavorable"
+      ]
+    },
+    {
+      "index": 53,
+      "name": "AIAcc",
+      "null_count": 50590,
+      "null_pct": 56.73,
+      "is_numeric": false,
+      "looks_like_date": false,
+      "is_multiselect": true,
+      "unique_approx": 61,
+      "examples": [
+        "nan",
+        "Increase productivity;Greater efficiency;Speed up learning",
+        "Increase productivity;Greater efficiency;Speed up learning;Improve accuracy in coding",
+        "Increase productivity;Greater efficiency",
+        "Increase productivity;Speed up learning",
+        "Increase productivity",
+        "Increase productivity;Greater efficiency;Speed up learning;Improve accuracy in coding;Improve collaboration",
+        "Increase productivity;Greater efficiency;Improve accuracy in coding",
+        "Speed up learning",
+        "Increase productivity;Speed up learning;Improve accuracy in coding"
+      ]
+    },
+    {
+      "index": 54,
+      "name": "AIBen",
+      "null_count": 27788,
+      "null_pct": 31.16,
+      "is_numeric": false,
+      "looks_like_date": false,
+      "is_multiselect": false,
+      "unique_approx": 6,
+      "examples": [
+        "nan",
+        "Somewhat trust",
+        "Neither trust nor distrust",
+        "Somewhat distrust",
+        "Highly distrust",
+        "Highly trust"
+      ]
+    },
+    {
+      "index": 55,
+      "name": "AIToolInterested in Using",
+      "null_count": 56401,
+      "null_pct": 63.24,
+      "is_numeric": false,
+      "looks_like_date": false,
+      "is_multiselect": true,
+      "unique_approx": 641,
+      "examples": [
+        "nan",
+        "Learning about a codebase;Project planning;Writing code;Documenting code;Debugging and getting help;Testing code;Committing and reviewing code;Deployment and monitoring;Collaborating with teammates ",
+        "Learning about a codebase;Project planning;Documenting code;Debugging and getting help;Testing code;Committing and reviewing code;Deployment and monitoring;Collaborating with teammates ",
+        "Learning about a codebase",
+        "Documenting code",
+        "Learning about a codebase;Project planning;Documenting code;Testing code;Committing and reviewing code;Deployment and monitoring;Collaborating with teammates ",
+        "Documenting code;Testing code",
+        "Writing code",
+        "Learning about a codebase;Project planning;Debugging and getting help;Testing code;Committing and reviewing code;Deployment and monitoring;Collaborating with teammates ",
+        "Testing code"
+      ]
+    },
+    {
+      "index": 56,
+      "name": "AIToolCurrently Using",
+      "null_count": 53047,
+      "null_pct": 59.48,
+      "is_numeric": false,
+      "looks_like_date": false,
+      "is_multiselect": true,
+      "unique_approx": 534,
+      "examples": [
+        "nan",
+        "Writing code",
+        "Writing code;Debugging and getting help",
+        "Writing code;Documenting code",
+        "Learning about a codebase;Writing code;Debugging and getting help",
+        "Writing code;Documenting code;Debugging and getting help",
+        "Learning about a codebase;Writing code",
+        "Writing code;Documenting code;Debugging and getting help;Testing code",
+        "Debugging and getting help",
+        "Writing code;Documenting code;Testing code"
+      ]
+    },
+    {
+      "index": 57,
+      "name": "AIToolNot interested in Using",
+      "null_count": 68115,
+      "null_pct": 76.38,
+      "is_numeric": false,
+      "looks_like_date": false,
+      "is_multiselect": true,
+      "unique_approx": 536,
+      "examples": [
+        "nan",
+        "Collaborating with teammates ",
+        "Project planning",
+        "Project planning;Collaborating with teammates ",
+        "Deployment and monitoring;Collaborating with teammates ",
+        "Project planning;Deployment and monitoring;Collaborating with teammates ",
+        "Project planning;Committing and reviewing code;Deployment and monitoring;Collaborating with teammates ",
+        "Committing and reviewing code;Deployment and monitoring;Collaborating with teammates ",
+        "Committing and reviewing code;Collaborating with teammates ",
+        "Learning about a codebase;Project planning;Committing and reviewing code;Deployment and monitoring;Collaborating with teammates "
+      ]
+    },
+    {
+      "index": 58,
+      "name": "AINextVery different",
+      "null_count": 76523,
+      "null_pct": 85.8,
+      "is_numeric": false,
+      "looks_like_date": false,
+      "is_multiselect": true,
+      "unique_approx": 350,
+      "examples": [
+        "nan",
+        "Writing code",
+        "Debugging and getting help",
+        "Documenting code",
+        "Writing code;Debugging and getting help",
+        "Learning about a codebase",
+        "Writing code;Documenting code",
+        "Testing code",
+        "Learning about a codebase;Writing code",
+        "Writing code;Documenting code;Debugging and getting help"
+      ]
+    },
+    {
+      "index": 59,
+      "name": "AINextNeither different nor similar",
+      "null_count": 82585,
+      "null_pct": 92.6,
+      "is_numeric": false,
+      "looks_like_date": false,
+      "is_multiselect": true,
+      "unique_approx": 223,
+      "examples": [
+        "nan",
+        "Writing code",
+        "Debugging and getting help",
+        "Learning about a codebase",
+        "Documenting code",
+        "Project planning",
+        "Testing code",
+        "Committing and reviewing code",
+        "Writing code;Debugging and getting help",
+        "Writing code;Documenting code"
+      ]
+    },
+    {
+      "index": 60,
+      "name": "AINextSomewhat similar",
+      "null_count": 82946,
+      "null_pct": 93.01,
+      "is_numeric": false,
+      "looks_like_date": false,
+      "is_multiselect": true,
+      "unique_approx": 198,
+      "examples": [
+        "nan",
+        "Writing code",
+        "Debugging and getting help",
+        "Learning about a codebase",
+        "Writing code;Debugging and getting help",
+        "Writing code;Documenting code",
+        "Documenting code",
+        "Project planning",
+        "Testing code",
+        "Learning about a codebase;Writing code"
+      ]
+    },
+    {
+      "index": 61,
+      "name": "AINextVery similar",
+      "null_count": 86563,
+      "null_pct": 97.06,
+      "is_numeric": false,
+      "looks_like_date": false,
+      "is_multiselect": true,
+      "unique_approx": 160,
+      "examples": [
+        "nan",
+        "Writing code",
+        "Debugging and getting help",
+        "Documenting code",
+        "Writing code;Documenting code",
+        "Learning about a codebase",
+        "Writing code;Debugging and getting help",
+        "Project planning",
+        "Testing code",
+        "Committing and reviewing code"
+      ]
+    },
+    {
+      "index": 62,
+      "name": "AINextSomewhat different",
+      "null_count": 65881,
+      "null_pct": 73.87,
+      "is_numeric": false,
+      "looks_like_date": false,
+      "is_multiselect": true,
+      "unique_approx": 327,
+      "examples": [
+        "nan",
+        "Writing code",
+        "Writing code;Debugging and getting help",
+        "Debugging and getting help",
+        "Learning about a codebase",
+        "Writing code;Documenting code",
+        "Learning about a codebase;Writing code",
+        "Documenting code",
+        "Project planning",
+        "Writing code;Testing code"
+      ]
+    },
+    {
+      "index": 63,
+      "name": "TBranch",
+      "null_count": 23416,
+      "null_pct": 26.26,
+      "is_numeric": false,
+      "looks_like_date": false,
+      "is_multiselect": false,
+      "unique_approx": 3,
+      "examples": [
+        "Yes",
+        "nan",
+        "No"
+      ]
+    },
+    {
+      "index": 64,
+      "name": "ICorPM",
+      "null_count": 45516,
+      "null_pct": 51.04,
+      "is_numeric": false,
+      "looks_like_date": false,
+      "is_multiselect": false,
+      "unique_approx": 3,
+      "examples": [
+        "nan",
+        "Individual contributor",
+        "People manager"
+      ]
+    },
+    {
+      "index": 65,
+      "name": "WorkExp",
+      "null_count": 45605,
+      "null_pct": 51.14,
+      "is_numeric": true,
+      "looks_like_date": false,
+      "is_multiselect": false,
+      "unique_approx": 51,
+      "examples": [
+        10.0,
+        23.0,
+        7.0,
+        6.0,
+        22.0
+      ]
+    },
+    {
+      "index": 66,
+      "name": "Knowledge_1",
+      "null_count": 46649,
+      "null_pct": 52.31,
+      "is_numeric": false,
+      "looks_like_date": false,
+      "is_multiselect": false,
+      "unique_approx": 6,
+      "examples": [
+        "nan",
+        "Agree",
+        "Strongly agree",
+        "Neither agree nor disagree",
+        "Disagree",
+        "Strongly disagree"
+      ]
+    },
+    {
+      "index": 67,
+      "name": "Knowledge_2",
+      "null_count": 47514,
+      "null_pct": 53.28,
+      "is_numeric": false,
+      "looks_like_date": false,
+      "is_multiselect": false,
+      "unique_approx": 6,
+      "examples": [
+        "nan",
+        "Agree",
+        "Neither agree nor disagree",
+        "Disagree",
+        "Strongly agree",
+        "Strongly disagree"
+      ]
+    },
+    {
+      "index": 68,
+      "name": "Knowledge_3",
+      "null_count": 47386,
+      "null_pct": 53.13,
+      "is_numeric": false,
+      "looks_like_date": false,
+      "is_multiselect": false,
+      "unique_approx": 6,
+      "examples": [
+        "nan",
+        "Agree",
+        "Neither agree nor disagree",
+        "Disagree",
+        "Strongly agree",
+        "Strongly disagree"
+      ]
+    },
+    {
+      "index": 69,
+      "name": "Knowledge_4",
+      "null_count": 47500,
+      "null_pct": 53.26,
+      "is_numeric": false,
+      "looks_like_date": false,
+      "is_multiselect": false,
+      "unique_approx": 6,
+      "examples": [
+        "nan",
+        "Agree",
+        "Neither agree nor disagree",
+        "Disagree",
+        "Strongly agree",
+        "Strongly disagree"
+      ]
+    },
+    {
+      "index": 70,
+      "name": "Knowledge_5",
+      "null_count": 47657,
+      "null_pct": 53.44,
+      "is_numeric": false,
+      "looks_like_date": false,
+      "is_multiselect": false,
+      "unique_approx": 6,
+      "examples": [
+        "nan",
+        "Agree",
+        "Neither agree nor disagree",
+        "Strongly agree",
+        "Disagree",
+        "Strongly disagree"
+      ]
+    },
+    {
+      "index": 71,
+      "name": "Knowledge_6",
+      "null_count": 47664,
+      "null_pct": 53.44,
+      "is_numeric": false,
+      "looks_like_date": false,
+      "is_multiselect": false,
+      "unique_approx": 6,
+      "examples": [
+        "nan",
+        "Agree",
+        "Neither agree nor disagree",
+        "Disagree",
+        "Strongly agree",
+        "Strongly disagree"
+      ]
+    },
+    {
+      "index": 72,
+      "name": "Knowledge_7",
+      "null_count": 47717,
+      "null_pct": 53.5,
+      "is_numeric": false,
+      "looks_like_date": false,
+      "is_multiselect": false,
+      "unique_approx": 6,
+      "examples": [
+        "nan",
+        "Agree",
+        "Neither agree nor disagree",
+        "Disagree",
+        "Strongly agree",
+        "Strongly disagree"
+      ]
+    },
+    {
+      "index": 73,
+      "name": "Knowledge_8",
+      "null_count": 47780,
+      "null_pct": 53.57,
+      "is_numeric": false,
+      "looks_like_date": false,
+      "is_multiselect": false,
+      "unique_approx": 6,
+      "examples": [
+        "nan",
+        "Agree",
+        "Neither agree nor disagree",
+        "Disagree",
+        "Strongly agree",
+        "Strongly disagree"
+      ]
+    },
+    {
+      "index": 74,
+      "name": "Frequency_1",
+      "null_count": 47268,
+      "null_pct": 53.0,
+      "is_numeric": false,
+      "looks_like_date": false,
+      "is_multiselect": false,
+      "unique_approx": 6,
+      "examples": [
+        "nan",
+        "1-2 times a week",
+        "Never",
+        "3-5 times a week",
+        "6-10 times a week",
+        "10+ times a week"
+      ]
+    },
+    {
+      "index": 75,
+      "name": "Frequency_2",
+      "null_count": 47259,
+      "null_pct": 52.99,
+      "is_numeric": false,
+      "looks_like_date": false,
+      "is_multiselect": false,
+      "unique_approx": 6,
+      "examples": [
+        "nan",
+        "1-2 times a week",
+        "3-5 times a week",
+        "10+ times a week",
+        "6-10 times a week",
+        "Never"
+      ]
+    },
+    {
+      "index": 76,
+      "name": "Frequency_3",
+      "null_count": 48130,
+      "null_pct": 53.97,
+      "is_numeric": false,
+      "looks_like_date": false,
+      "is_multiselect": false,
+      "unique_approx": 6,
+      "examples": [
+        "nan",
+        "1-2 times a week",
+        "Never",
+        "3-5 times a week",
+        "6-10 times a week",
+        "10+ times a week"
+      ]
+    },
+    {
+      "index": 77,
+      "name": "TimeSearching",
+      "null_count": 46406,
+      "null_pct": 52.03,
+      "is_numeric": false,
+      "looks_like_date": false,
+      "is_multiselect": false,
+      "unique_approx": 6,
+      "examples": [
+        "nan",
+        "30-60 minutes a day",
+        "15-30 minutes a day",
+        "60-120 minutes a day",
+        "Less than 15 minutes a day",
+        "Over 120 minutes a day"
+      ]
+    },
+    {
+      "index": 78,
+      "name": "TimeAnswering",
+      "null_count": 46555,
+      "null_pct": 52.2,
+      "is_numeric": false,
+      "looks_like_date": false,
+      "is_multiselect": false,
+      "unique_approx": 6,
+      "examples": [
+        "nan",
+        "15-30 minutes a day",
+        "30-60 minutes a day",
+        "Less than 15 minutes a day",
+        "60-120 minutes a day",
+        "Over 120 minutes a day"
+      ]
+    },
+    {
+      "index": 79,
+      "name": "ProfessionalTech",
+      "null_count": 47401,
+      "null_pct": 53.15,
+      "is_numeric": false,
+      "looks_like_date": false,
+      "is_multiselect": true,
+      "unique_approx": 285,
+      "examples": [
+        "nan",
+        "None of these",
+        "DevOps function;Microservices;Automated testing;Observability tools;Developer portal or other central places to find tools/services;Continuous integration (CI) and (more often) continuous delivery",
+        "DevOps function;Microservices;Automated testing;Observability tools;Continuous integration (CI) and (more often) continuous delivery",
+        "DevOps function;Microservices;Automated testing;Continuous integration (CI) and (more often) continuous delivery",
+        "DevOps function;Automated testing;Continuous integration (CI) and (more often) continuous delivery",
+        "Automated testing;Continuous integration (CI) and (more often) continuous delivery",
+        "DevOps function;Microservices;Automated testing;Observability tools;Innersource initiative;Developer portal or other central places to find tools/services;Continuous integration (CI) and (more often) continuous delivery;AI-assisted technology tool(s)",
+        "DevOps function;Microservices;Automated testing;Developer portal or other central places to find tools/services;Continuous integration (CI) and (more often) continuous delivery",
+        "DevOps function;Microservices;Automated testing;Observability tools;Innersource initiative;Developer portal or other central places to find tools/services;Continuous integration (CI) and (more often) continuous delivery"
+      ]
+    },
+    {
+      "index": 80,
+      "name": "Industry",
+      "null_count": 52410,
+      "null_pct": 58.77,
+      "is_numeric": false,
+      "looks_like_date": false,
+      "is_multiselect": false,
+      "unique_approx": 13,
+      "examples": [
+        "nan",
+        "Information Services, IT, Software Development, or other Technology",
+        "Financial Services",
+        "Other",
+        "Manufacturing, Transportation, or Supply Chain",
+        "Healthcare",
+        "Retail and Consumer Services",
+        "Higher Education",
+        "Advertising Services",
+        "Insurance"
+      ]
+    },
+    {
+      "index": 81,
+      "name": "SurveyLength",
+      "null_count": 2699,
+      "null_pct": 3.03,
+      "is_numeric": false,
+      "looks_like_date": false,
+      "is_multiselect": false,
+      "unique_approx": 4,
+      "examples": [
+        "Appropriate in length",
+        "Too long",
+        "nan",
+        "Too short"
+      ]
+    },
+    {
+      "index": 82,
+      "name": "SurveyEase",
+      "null_count": 2630,
+      "null_pct": 2.95,
+      "is_numeric": false,
+      "looks_like_date": false,
+      "is_multiselect": false,
+      "unique_approx": 4,
+      "examples": [
+        "Easy",
+        "Neither easy nor difficult",
+        "nan",
+        "Difficult"
+      ]
+    },
+    {
+      "index": 83,
+      "name": "ConvertedCompYearly",
+      "null_count": 41165,
+      "null_pct": 46.16,
+      "is_numeric": true,
+      "looks_like_date": false,
+      "is_multiselect": false,
+      "unique_approx": 8784,
+      "examples": [
+        285000.0,
+        250000.0,
+        156000.0,
+        23456.0,
+        96828.0
+      ]
+    }
+  ],
+  "encoding_used": "utf-8-sig",
+  "run_duration_seconds": 12.0
+}

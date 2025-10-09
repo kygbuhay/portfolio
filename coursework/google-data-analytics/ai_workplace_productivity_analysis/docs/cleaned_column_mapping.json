@@ -1,0 +1,1205 @@
+{
+  "generated_date": "2025-10-08T09:25:33.590371",
+  "summary": {
+    "intersection_count": 27,
+    "total_transformations": 0
+  },
+  "years": {
+    "2023": {
+      "table_name": "2023_stackoverflow_cleaned",
+      "column_count": 87,
+      "columns": [
+        {
+          "column_name": "ResponseId",
+          "data_type": "INT64"
+        },
+        {
+          "column_name": "Q120",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "MainBranch",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "Age",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "Employment",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "RemoteWork",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "CodingActivities",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "EdLevel",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "LearnCode",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "LearnCodeOnline",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "LearnCodeCoursesCert",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "YearsCode",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "YearsCodePro",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "DevType",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "OrgSize",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "PurchaseInfluence",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "TechList",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "BuyNewTool",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "Country",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "Currency",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "CompTotal",
+          "data_type": "FLOAT64"
+        },
+        {
+          "column_name": "LanguageHaveWorkedWith",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "LanguageWantToWorkWith",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "DatabaseHaveWorkedWith",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "DatabaseWantToWorkWith",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "PlatformHaveWorkedWith",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "PlatformWantToWorkWith",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "WebframeHaveWorkedWith",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "WebframeWantToWorkWith",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "MiscTechHaveWorkedWith",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "MiscTechWantToWorkWith",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "ToolsTechHaveWorkedWith",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "ToolsTechWantToWorkWith",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "NEWCollabToolsHaveWorkedWith",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "NEWCollabToolsWantToWorkWith",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "OpSysPersonal_use",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "OpSysProfessional_use",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "OfficeStackAsyncHaveWorkedWith",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "OfficeStackAsyncWantToWorkWith",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "OfficeStackSyncHaveWorkedWith",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "OfficeStackSyncWantToWorkWith",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "AISearchHaveWorkedWith",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "AISearchWantToWorkWith",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "AIDevHaveWorkedWith",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "AIDevWantToWorkWith",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "NEWSOSites",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "SOVisitFreq",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "SOAccount",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "SOPartFreq",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "SOComm",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "SOAI",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "AISelect",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "AISent",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "AIAcc",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "AIBen",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "AIToolInterested_in_Using",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "AIToolCurrently_Using",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "AIToolNot_interested_in_Using",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "AINextVery_different",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "AINextNeither_different_nor_similar",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "AINextSomewhat_similar",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "AINextVery_similar",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "AINextSomewhat_different",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "TBranch",
+          "data_type": "BOOL"
+        },
+        {
+          "column_name": "ICorPM",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "WorkExp",
+          "data_type": "INT64"
+        },
+        {
+          "column_name": "Knowledge_1",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "Knowledge_2",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "Knowledge_3",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "Knowledge_4",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "Knowledge_5",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "Knowledge_6",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "Knowledge_7",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "Knowledge_8",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "Frequency_1",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "Frequency_2",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "Frequency_3",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "TimeSearching",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "TimeAnswering",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "ProfessionalTech",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "Industry",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "SurveyLength",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "SurveyEase",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "ConvertedCompYearly",
+          "data_type": "FLOAT64"
+        },
+        {
+          "column_name": "survey_year",
+          "data_type": "INT64"
+        },
+        {
+          "column_name": "processing_timestamp",
+          "data_type": "TIMESTAMP"
+        },
+        {
+          "column_name": "source_encoding",
+          "data_type": "STRING"
+        }
+      ]
+    },
+    "2024": {
+      "table_name": "2024_stackoverflow_cleaned",
+      "column_count": 100,
+      "columns": [
+        {
+          "column_name": "ResponseId",
+          "data_type": "INT64"
+        },
+        {
+          "column_name": "MainBranch",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "Age",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "Employment",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "RemoteWork",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "Check",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "CodingActivities",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "EdLevel",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "LearnCode",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "LearnCodeOnline",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "TechDoc",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "YearsCode",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "YearsCodePro",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "DevType",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "OrgSize",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "PurchaseInfluence",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "BuyNewTool",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "BuildvsBuy",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "TechEndorse",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "Country",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "Currency",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "CompTotal",
+          "data_type": "FLOAT64"
+        },
+        {
+          "column_name": "LanguageHaveWorkedWith",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "LanguageWantToWorkWith",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "LanguageAdmired",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "DatabaseHaveWorkedWith",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "DatabaseWantToWorkWith",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "DatabaseAdmired",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "PlatformHaveWorkedWith",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "PlatformWantToWorkWith",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "PlatformAdmired",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "WebframeHaveWorkedWith",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "WebframeWantToWorkWith",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "WebframeAdmired",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "EmbeddedHaveWorkedWith",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "EmbeddedWantToWorkWith",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "EmbeddedAdmired",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "MiscTechHaveWorkedWith",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "MiscTechWantToWorkWith",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "MiscTechAdmired",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "ToolsTechHaveWorkedWith",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "ToolsTechWantToWorkWith",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "ToolsTechAdmired",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "NEWCollabToolsHaveWorkedWith",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "NEWCollabToolsWantToWorkWith",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "NEWCollabToolsAdmired",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "OpSysPersonal_use",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "OpSysProfessional_use",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "OfficeStackAsyncHaveWorkedWith",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "OfficeStackAsyncWantToWorkWith",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "OfficeStackAsyncAdmired",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "OfficeStackSyncHaveWorkedWith",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "OfficeStackSyncWantToWorkWith",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "OfficeStackSyncAdmired",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "AISearchDevHaveWorkedWith",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "AISearchDevWantToWorkWith",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "AISearchDevAdmired",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "NEWSOSites",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "SOVisitFreq",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "SOAccount",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "SOPartFreq",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "SOHow",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "SOComm",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "AISelect",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "AISent",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "AIBen",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "AIAcc",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "AIComplex",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "AIToolCurrently_Using",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "AIToolInterested_in_Using",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "AIToolNot_interested_in_Using",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "AINextMuch_more_integrated",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "AINextNo_change",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "AINextMore_integrated",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "AINextLess_integrated",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "AINextMuch_less_integrated",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "AIThreat",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "AIEthics",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "AIChallenges",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "TBranch",
+          "data_type": "BOOL"
+        },
+        {
+          "column_name": "ICorPM",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "WorkExp",
+          "data_type": "INT64"
+        },
+        {
+          "column_name": "Knowledge_1",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "Knowledge_2",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "Knowledge_3",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "Knowledge_4",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "Knowledge_5",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "Knowledge_6",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "Knowledge_7",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "Knowledge_8",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "Knowledge_9",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "Frequency_1",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "Frequency_2",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "Frequency_3",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "TimeSearching",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "TimeAnswering",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "Frustration",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "ProfessionalTech",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "ProfessionalCloud",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "ProfessionalQuestion",
+          "data_type": "STRING"
+        }
+      ]
+    },
+    "2025": {
+      "table_name": "2025_stackoverflow_cleaned",
+      "column_count": 100,
+      "columns": [
+        {
+          "column_name": "ResponseId",
+          "data_type": "INT64"
+        },
+        {
+          "column_name": "MainBranch",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "Age",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "EdLevel",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "Employment",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "EmploymentAddl",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "WorkExp",
+          "data_type": "INT64"
+        },
+        {
+          "column_name": "LearnCodeChoose",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "LearnCode",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "LearnCodeAI",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "AILearnHow",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "YearsCode",
+          "data_type": "INT64"
+        },
+        {
+          "column_name": "DevType",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "OrgSize",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "ICorPM",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "RemoteWork",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "PurchaseInfluence",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "TechEndorseIntro",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "TechEndorse_1",
+          "data_type": "INT64"
+        },
+        {
+          "column_name": "TechEndorse_2",
+          "data_type": "INT64"
+        },
+        {
+          "column_name": "TechEndorse_3",
+          "data_type": "INT64"
+        },
+        {
+          "column_name": "TechEndorse_4",
+          "data_type": "INT64"
+        },
+        {
+          "column_name": "TechEndorse_5",
+          "data_type": "INT64"
+        },
+        {
+          "column_name": "TechEndorse_6",
+          "data_type": "INT64"
+        },
+        {
+          "column_name": "TechEndorse_7",
+          "data_type": "INT64"
+        },
+        {
+          "column_name": "TechEndorse_8",
+          "data_type": "INT64"
+        },
+        {
+          "column_name": "TechEndorse_9",
+          "data_type": "INT64"
+        },
+        {
+          "column_name": "TechEndorse_13",
+          "data_type": "INT64"
+        },
+        {
+          "column_name": "TechEndorse_13_TEXT",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "TechOppose_1",
+          "data_type": "INT64"
+        },
+        {
+          "column_name": "TechOppose_2",
+          "data_type": "INT64"
+        },
+        {
+          "column_name": "TechOppose_3",
+          "data_type": "INT64"
+        },
+        {
+          "column_name": "TechOppose_5",
+          "data_type": "INT64"
+        },
+        {
+          "column_name": "TechOppose_7",
+          "data_type": "INT64"
+        },
+        {
+          "column_name": "TechOppose_9",
+          "data_type": "INT64"
+        },
+        {
+          "column_name": "TechOppose_11",
+          "data_type": "INT64"
+        },
+        {
+          "column_name": "TechOppose_13",
+          "data_type": "INT64"
+        },
+        {
+          "column_name": "TechOppose_16",
+          "data_type": "INT64"
+        },
+        {
+          "column_name": "TechOppose_15",
+          "data_type": "INT64"
+        },
+        {
+          "column_name": "TechOppose_15_TEXT",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "Industry",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "JobSatPoints_1",
+          "data_type": "FLOAT64"
+        },
+        {
+          "column_name": "JobSatPoints_4",
+          "data_type": "FLOAT64"
+        },
+        {
+          "column_name": "JobSatPoints_5",
+          "data_type": "FLOAT64"
+        },
+        {
+          "column_name": "JobSatPoints_6",
+          "data_type": "FLOAT64"
+        },
+        {
+          "column_name": "JobSatPoints_7",
+          "data_type": "FLOAT64"
+        },
+        {
+          "column_name": "JobSatPoints_8",
+          "data_type": "FLOAT64"
+        },
+        {
+          "column_name": "JobSatPoints_9",
+          "data_type": "FLOAT64"
+        },
+        {
+          "column_name": "JobSatPoints_10",
+          "data_type": "FLOAT64"
+        },
+        {
+          "column_name": "JobSatPoints_11",
+          "data_type": "FLOAT64"
+        },
+        {
+          "column_name": "JobSatPoints_13",
+          "data_type": "FLOAT64"
+        },
+        {
+          "column_name": "JobSatPoints_14",
+          "data_type": "FLOAT64"
+        },
+        {
+          "column_name": "JobSatPoints_15",
+          "data_type": "FLOAT64"
+        },
+        {
+          "column_name": "JobSatPoints_16",
+          "data_type": "FLOAT64"
+        },
+        {
+          "column_name": "JobSatPoints_15_TEXT",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "AIThreat",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "NewRole",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "ToolCountWork",
+          "data_type": "INT64"
+        },
+        {
+          "column_name": "ToolCountPersonal",
+          "data_type": "INT64"
+        },
+        {
+          "column_name": "Country",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "Currency",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "CompTotal",
+          "data_type": "FLOAT64"
+        },
+        {
+          "column_name": "LanguageChoice",
+          "data_type": "BOOL"
+        },
+        {
+          "column_name": "LanguageHaveWorkedWith",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "LanguageWantToWorkWith",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "LanguageAdmired",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "LanguagesHaveEntry",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "LanguagesWantEntry",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "DatabaseChoice",
+          "data_type": "BOOL"
+        },
+        {
+          "column_name": "DatabaseHaveWorkedWith",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "DatabaseWantToWorkWith",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "DatabaseAdmired",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "DatabaseHaveEntry",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "DatabaseWantEntry",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "PlatformChoice",
+          "data_type": "BOOL"
+        },
+        {
+          "column_name": "PlatformHaveWorkedWith",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "PlatformWantToWorkWith",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "PlatformAdmired",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "PlatformHaveEntry",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "PlatformWantEntry",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "WebframeChoice",
+          "data_type": "BOOL"
+        },
+        {
+          "column_name": "WebframeHaveWorkedWith",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "WebframeWantToWorkWith",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "WebframeAdmired",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "WebframeHaveEntry",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "WebframeWantEntry",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "DevEnvsChoice",
+          "data_type": "BOOL"
+        },
+        {
+          "column_name": "DevEnvsHaveWorkedWith",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "DevEnvsWantToWorkWith",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "DevEnvsAdmired",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "DevEnvHaveEntry",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "DevEnvWantEntry",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "SOTagsHaveWorkedWith",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "SOTagsWantToWorkWith",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "SOTagsAdmired",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "SOTagsHaveEntry",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "SOTagsWant_Entry",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "OpSysPersonal_use",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "OpSysProfessional_use",
+          "data_type": "STRING"
+        },
+        {
+          "column_name": "OfficeStackAsyncHaveWorkedWith",
+          "data_type": "STRING"
+        }
+      ]
+    }
+  },
+  "transformations": [],
+  "intersection_cleaned": [
+    "Age",
+    "CompTotal",
+    "Country",
+    "Currency",
+    "DatabaseHaveWorkedWith",
+    "DatabaseWantToWorkWith",
+    "DevType",
+    "EdLevel",
+    "Employment",
+    "ICorPM",
+    "LanguageHaveWorkedWith",
+    "LanguageWantToWorkWith",
+    "LearnCode",
+    "MainBranch",
+    "OfficeStackAsyncHaveWorkedWith",
+    "OpSysPersonal_use",
+    "OpSysProfessional_use",
+    "OrgSize",
+    "PlatformHaveWorkedWith",
+    "PlatformWantToWorkWith",
+    "PurchaseInfluence",
+    "RemoteWork",
+    "ResponseId",
+    "WebframeHaveWorkedWith",
+    "WebframeWantToWorkWith",
+    "WorkExp",
+    "YearsCode"
+  ]
+}
