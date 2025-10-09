@@ -23,9 +23,9 @@ Built in **BigQuery + SQL**, visualized in **Tableau**, and designed as a **seni
 ## 📊 Interactive Dashboard
 
 **View live Tableau analysis:**  
-👉 [AI Productivity ROI Analysis – Developer Distribution (2023–2024)](https://public.tableau.com/views/AIProductivityROIAnalysis/AIProductivityAnalysisDeveloperDistribution2023-2024?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
+👉 [AI Productivity ROI Analysis – Developer Distribution (2023–2024)](https://public.tableau.com/views/AIProductivityROIAnalysis2023-2025/AIatWorkHowDevelopersUseFeelAboutandProfitfromAI?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
 
-[![View Tableau Dashboard](https://img.shields.io/badge/Tableau-Live_Dashboard-E97627?logo=tableau)](https://public.tableau.com/views/AI-Productivity-ROI-Analysis/AIToolAdoptionandProductivityAnalysis2023-2024_1)
+[![View Tableau Dashboard](https://img.shields.io/badge/Tableau-Live_Dashboard-E97627?logo=tableau)](https://public.tableau.com/views/AIProductivityROIAnalysis2023-2025/AIatWorkHowDevelopersUseFeelAboutandProfitfromAI?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
 
 ## 📊 Dashboard Preview
 
