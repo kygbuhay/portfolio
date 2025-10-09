@@ -2,7 +2,7 @@
 > Quantifying the impact of AI developer tools (GitHub Copilot, ChatGPT, Cursor) on productivity and ROI  
 > Based on Stack Overflow Developer Surveys 2023–2025
 
-[![View Tableau Dashboard](https://img.shields.io/badge/Tableau-Live_Dashboard-E97627?logo=tableau)](https://public.tableau.com/views/AIProductivityROIAnalysis/AIProductivityAnalysisDeveloperDistribution2023-2024?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
+[![View Tableau Dashboard](https://img.shields.io/badge/Tableau-Live_Dashboard-E97627?logo=tableau)](https://public.tableau.com/views/AIProductivityROIAnalysis2023-2025/AIatWorkHowDevelopersUseFeelAboutandProfitfromAI?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
 
 ---
 
