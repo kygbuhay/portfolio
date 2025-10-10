@@ -1,0 +1,39 @@
+# Google Fiber Project .gitignore
+
+# Tableau files
+*.twb~
+*.twbx~
+
+# Data files (don't commit raw CSVs to GitHub - too large)
+data/raw/*.csv
+*.csv
+
+# Keep processed data structure but not files
+data/processed/*
+!data/processed/.gitkeep
+
+# BigQuery credentials (NEVER commit these!)
+*.json
+*-key.json
+credentials/
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Python (if you add any scripts later)
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Backup files
+*~
+*.bak
+*.backup
