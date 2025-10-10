@@ -30,7 +30,7 @@ Thumbs.db
 *.swo
 __MACOSX/
 
-# Data
+# Data (large or private)
 **/data/raw/**
 !**/data/raw/tiktok_dataset.csv
 **/data/raw/**/*.zip
@@ -42,30 +42,42 @@ __MACOSX/
 **/data/processed/**/*.csv
 **/data/processed/**/combined_*.csv
 **/data/processed/**/stackoverflow_*.csv
+!**/data/processed/.gitkeep
 
-# Reports & Figures (include all image files, exclude temp/cache)
+# Tableau & BI exports
+*.twb~
+*.twbx~
+*.pdf
+
+# Credentials & Keys
+*.json
+*-key.json
+credentials/
+
+# Reports & Figures
 **/reports/figures/**/.DS_Store
 **/reports/figures/**/Thumbs.db
 **/reports/figures/**/*.tmp
-# Include all image files explicitly
+# Keep all static images
 !**/reports/figures/
 !**/reports/figures/**/*.png
 !**/reports/figures/**/*.jpg
 !**/reports/figures/**/*.jpeg
 !**/reports/figures/**/*.svg
 !**/reports/figures/**/*.gif
-!**/reports/figures/*/.gitkeep
+!**/reports/figures/**/.gitkeep
 
 # Stakeholder Docs
 **/docs/stakeholders/drafts/**
 !**/docs/stakeholders/final/**
 
-# Logs / Misc
+# Logs & temp
 *.log
 *.tmp
 *.bak
+*.backup
 
-# Session artifacts and development notes
+# Session artifacts and dev notes
 NOTEBOOK_FIXES.md
 NOTEBOOK_UPDATES*.md
 CHANGES_SUMMARY.md
@@ -76,7 +88,8 @@ STANDARDIZATION_REPORT.md
 **/STANDARDIZATION_REPORT.md
 planning/
 
-# Claude session documentation (keep out of main repo)
+# Claude / AI-generated session notes
 *claude_session*.md
 *session_notes*.md
 *work_log*.md
+
